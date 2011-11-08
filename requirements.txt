@@ -1,0 +1,4 @@
+gdata==2.0.10
+googlecl==0.9.5
+web.py==0.36
+wsgiref==0.1.2
