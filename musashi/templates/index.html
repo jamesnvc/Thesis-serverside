@@ -1,0 +1,79 @@
+$def with (tracks)
+<!doctype html>
+<head>
+  <meta charset="utf-8">
+
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+  <title>Code name: Musashi</title>
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <!-- Mobile viewport optimized: j.mp/bplateviewport -->
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+
+  <!-- Place favicon.ico and apple-touch-icon.png in the root directory: mathiasbynens.be/notes/touch-icons -->
+
+  <link rel="stylesheet" href="s/css/style.css">
+
+  <!-- All JavaScript at the bottom, except this Modernizr build incl. Respond.js
+       Respond is a polyfill for min/max-width media queries. Modernizr enables HTML5 elements & feature detects;
+       for optimal performance, create your own custom Modernizr build: www.modernizr.com/download/ -->
+  <script src="s/js/libs/modernizr-2.0.6.min.js"></script>
+</head>
+
+<body>
+
+  <div id="container">
+    <header>
+      <h1>Select your tracks</h1>
+    </header>
+    <div id="main" role="main">
+      <table class="track-chooser">
+        <thead>
+          <tr>
+            <th>Track</th>
+            <th>Release #</th>
+          </tr>
+        </thead>
+        <tbody>
+          $for i in xrange(1, 13):
+            <tr class="$(loop.even and 'even' or 'odd')">
+              <td>$i</td>
+              <td>
+                <select>
+                  $for tr in tracks[i-1]:
+                    <option value="$tr">$tr</option>
+                </select>
+              </td>
+            </tr>
+        </tbody>
+      </table>
+    </div>
+    <footer>
+
+    </footer>
+  </div> <!--! end of #container -->
+
+
+  <!-- JavaScript at the bottom for fast page loading -->
+
+  <!-- Grab Google CDN's jQuery, with a protocol relative URL; fall back to local if offline -->
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script>
+  <script>window.jQuery || document.write('<script src="s/js/libs/jquery-1.6.2.min.js"><\/script>')</script>
+
+
+  <!-- scripts concatenated and minified via build script -->
+  <script defer src="s/js/plugins.js"></script>
+  <script defer src="s/js/script.js"></script>
+  <!-- end scripts -->
+
+  <!-- Prompt IE 6 users to install Chrome Frame. Remove this if you want to support IE 6.
+       chromium.org/developers/how-tos/chrome-frame-getting-started -->
+  <!--[if lt IE 7 ]>
+    <script defer src="//ajax.googleapis.com/ajax/libs/chrome-frame/1.0.3/CFInstall.min.js"></script>
+    <script defer>window.attachEvent('onload',function(){CFInstall.check({mode:'overlay'})})</script>
+  <![endif]-->
+
+</body>
+</html>

@@ -1,0 +1,12 @@
+#container {
+  text-align: center;
+  width: 100%;
+}
+
+.track-chooser {
+  margin: 0 auto;
+}
+
+tr.even {
+  background-color: #c0ffee;
+}
