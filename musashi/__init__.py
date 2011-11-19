@@ -6,15 +6,20 @@ APP_ROOT = os.path.dirname(__file__)
 render = web.template.render(
         os.path.join(APP_ROOT, 'templates'))
 
+db = web.database(dbn='postgres', user='tester',
+        pw='testing', db='musashi-dev')
+
 urls = (
     '/', 'index',
     '/s/(.*)', 'static'
 )
 
+
 class index(object):
     def GET(self):
-        tracks = [map(chr, range(ord('a'), ord('d'))) for i in xrange(0,12)]
+        tracks = [map(chr, range(ord('a'), ord('d'))) for i in xrange(0, 12)]
         return render.index(tracks)
+
 
 class static(object):
     content_types = {

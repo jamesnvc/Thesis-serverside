@@ -1,0 +1,22 @@
+{
+  "tracks": [
+    {
+      "sequence": 1,
+      "release": 72,
+      "exercise": "Open chest\nright arm up\n...",
+      "count": 8,
+      "reps": 1,
+      "intensity": 0.7,
+      "song" :"Seek Bromance"
+    },
+    {
+      "sequence": 2,
+      "release": 72,
+      "exercise": "Foo bar",
+      "count": 10,
+      "reps": 5,
+      "intensity": 3,
+      "song": "Reign in Blood"
+    }
+  ]
+}

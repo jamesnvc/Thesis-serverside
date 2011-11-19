@@ -1,6 +1,10 @@
 CREATE TABLE tracks (
   id SERIAL PRIMARY KEY,
+  sequence INT,
   release INT,
+  exercise TEXT,
+  count INT,
+  reps INT,
   intensity REAL,
   song TEXT
 );
