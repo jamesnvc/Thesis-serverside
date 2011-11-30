@@ -1,5 +1,7 @@
+import collections
 import web
 import os
+import analytics
 
 APP_ROOT = os.path.dirname(__file__)
 
@@ -11,20 +13,30 @@ db = web.database(dbn='postgres', user='tester',
 
 urls = (
     '/', 'index',
+    '/analyze', 'analyze',
+    '/(favicon.ico)', 'static',
     '/s/(.*)', 'static'
 )
 
 
 class index(object):
-    def GET(self):
-        tracks = [map(chr, range(ord('a'), ord('d'))) for i in xrange(0, 12)]
-        return render.index(tracks)
 
+    def GET(self):
+        tracks = db.select('tracks', order='sequence')
+        tracks_dict = collections.defaultdict(list)
+        for track in tracks:
+            tracks_dict[track.sequence].append(track)
+        return render.index(tracks_dict)
+
+analyze = analytics.Analyzer
+analyze.db = db
+analyze.render = render
 
 class static(object):
     content_types = {
         '.js': 'text/javascript',
-        '.css': 'text/css'
+        '.css': 'text/css',
+        '.ico': 'image/x-icon'
     }
 
     def GET(self, path):

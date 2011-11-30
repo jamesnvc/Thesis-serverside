@@ -10,3 +10,23 @@
 tr.even {
   background-color: #c0ffee;
 }
+
+.results {
+  text-align: left;
+}
+
+.error {
+  border: 1px solid red;
+  background-color: #200;
+  color: #f00;
+}
+
+.success {
+  border: 1px solid green;
+  /*background-color: #0abb0a;*/
+  /*color: #afa;*/
+}
+
+tr.block td.label {
+  background-color: #c0ffee;
+}

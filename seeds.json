@@ -3,20 +3,326 @@
     {
       "sequence": 1,
       "release": 72,
-      "exercise": "Open chest\nright arm up\n...",
-      "count": 8,
-      "reps": 1,
-      "intensity": 0.7,
-      "song" :"Seek Bromance"
+      "song" :"Seek Bromance",
+      "kind": "Warmup",
+      "length_minutes": 5,
+      "length_seconds": 7
     },
     {
       "sequence": 2,
       "release": 72,
-      "exercise": "Foo bar",
-      "count": 10,
-      "reps": 5,
-      "intensity": 3,
-      "song": "Reign in Blood"
+      "song" :"Life Of A Superstar",
+      "kind": "Mixed Impact",
+      "length_minutes": 4,
+      "length_seconds": 2
+    },
+    {
+      "sequence": 3,
+      "release": 72,
+      "song" :"Whip My Hair",
+      "kind": "Aerobic",
+      "length_minutes": 5,
+      "length_seconds": 14
+    },
+    {
+      "sequence": 4,
+      "release": 72,
+      "song" :"Fight For Your Right",
+      "kind": "Pylometric",
+      "length_minutes": 4,
+      "length_seconds": 54
+    },
+    {
+      "sequence": 5,
+      "release": 72,
+      "song" :"Born This Way",
+      "kind": "Upper Body Conditioning",
+      "length_minutes": 4,
+      "length_seconds": 56
+    },
+    {
+      "sequence": 6,
+      "release": 72,
+      "song" :"Never Leave You",
+      "kind": "Running",
+      "length_minutes": 4,
+      "length_seconds": 22
+    },
+    {
+      "sequence": 7,
+      "release": 72,
+      "song" :"Bbbbbbounce",
+      "kind": "Agility",
+      "length_minutes": 4,
+      "length_seconds": 31
+    },
+    {
+      "sequence": 8,
+      "release": 72,
+      "song" :"Heaven Is A Place On Earth",
+      "kind": "Interval",
+      "length_minutes": 5,
+      "length_seconds": 0
+    },
+    {
+      "sequence": 9,
+      "release": 72,
+      "song" :"Grenade",
+      "kind": "Power",
+      "length_minutes": 5,
+      "length_seconds": 37
+    },
+    {
+      "sequence": 10,
+      "release": 72,
+      "song" :"Higher",
+      "kind": "Lower Body Conditioning",
+      "length_minutes": 3,
+      "length_seconds": 40
+    },
+    {
+      "sequence": 11,
+      "release": 72,
+      "song" :"On The Floor",
+      "kind": "Core Conditioning",
+      "length_minutes": 4,
+      "length_seconds": 25
+    },
+    {
+      "sequence": 12,
+      "release": 72,
+      "song" :"Let's Go",
+      "kind": "Cooldown",
+      "length_minutes": 4,
+      "length_seconds": 17
+    }
+  ],
+  "blocks": [
+    {
+      "track": { "sequence": 1, "release": 72 },
+      "sequence": 1,
+      "description": "Warmup"
+    },
+    {
+      "track": { "sequence": 1, "release": 72 },
+      "sequence": 2,
+      "description": "Repeating A-D1 & C, to the R"
+    },
+    {
+      "track": { "sequence": 1, "release": 72 },
+      "sequence": 3,
+      "description": "Herp derp"
+    }
+  ],
+  "exercises": [
+    {
+      "track": { "sequence": 1, "release": 72, "block": 1 },
+      "description": "Open Chest\nReach L arm up\nReach R arm up\nRoll down and up",
+      "count": 8,
+      "reps": 1,
+      "gear": 1,
+      "start_time": 4
+    },
+    {
+      "track": { "sequence": 1, "release": 72, "block": 1 },
+      "description": "A: Step Touch L, R Double Arm Reach F",
+      "count": 4,
+      "reps": 8,
+      "gear": 1,
+      "start_time": 17
+    },
+    {
+      "track": { "sequence": 1, "release": 72, "block": 1 },
+      "description": "B: Double Step Touch L, R, Double Arm Rearch F",
+      "count": 8,
+      "reps": 4,
+      "gear": 1,
+      "start_time": 30
+    },
+    {
+      "track": { "sequence": 1, "release": 72, "block": 1 },
+      "description": "C: Grapevine L, R Double Arm Reach F",
+      "count": 8,
+      "reps": 4,
+      "gear": 1,
+      "start_time": 43
+    },
+    {
+      "track": { "sequence": 1, "release": 72, "block": 1 },
+      "description": "D: Walk F&B L. RA",
+      "count": 8,
+      "reps": 4,
+      "gear": 1,
+      "start_time": 56
+    },
+    {
+      "track": { "sequence": 1, "release": 72, "block": 1 },
+      "description": "E: 8-Tap Repater L, R. RA",
+      "count": 32,
+      "reps": 1,
+      "gear": 1,
+      "start_time": 109
+    },
+    {
+      "track": { "sequence": 1, "release": 72, "block": 1 },
+      "description": "E1: 8-Knee Repeater L, R. RA",
+      "count": 64,
+      "reps": 1,
+      "gear": 1,
+      "start_time": 122
+    },
+    {
+      "track": { "sequence": 1, "release": 72, "block": 1 },
+      "description": "D: [rotate icon] Walk F&B L. RA",
+      "count": 8,
+      "reps": 4,
+      "gear": 1,
+      "start_time": 149
+    },
+    {
+      "track": { "sequence": 1, "release": 72, "block": 1 },
+      "description": "D1: Walk F&B to L F corner. RA",
+      "count": 8,
+      "reps": 4,
+      "gear": 1,
+      "start_time": 149
+    },
+    {
+      "track": { "sequence": 1, "release": 72, "block": 1 },
+      "description": "C: Grapevine L. HOH",
+      "count": 4,
+      "reps": 1,
+      "gear": 1,
+      "start_time": 215
+    },
+    {
+      "track": { "sequence": 1, "release": 72, "block": 2 },
+      "description": "A: Step Touch L, R Double Arm Reach F",
+      "count": 4,
+      "reps": 8,
+      "gear": 1,
+      "start_time": 17
+    },
+    {
+      "track": { "sequence": 1, "release": 72, "block": 2 },
+      "description": "B: Double Step Touch L, R, Double Arm Rearch F",
+      "count": 8,
+      "reps": 4,
+      "gear": 1,
+      "start_time": 30
+    },
+    {
+      "track": { "sequence": 1, "release": 72, "block": 2 },
+      "description": "C: Grapevine L, R Double Arm Reach F",
+      "count": 8,
+      "reps": 4,
+      "gear": 1,
+      "start_time": 43
+    },
+    {
+      "track": { "sequence": 1, "release": 72, "block": 2 },
+      "description": "D: Walk F&B L. RA",
+      "count": 8,
+      "reps": 4,
+      "gear": 1,
+      "start_time": 56
+    },
+    {
+      "track": { "sequence": 1, "release": 72, "block": 2 },
+      "description": "E: 8-Tap Repater L, R. RA",
+      "count": 32,
+      "reps": 1,
+      "gear": 1,
+      "start_time": 109
+    },
+    {
+      "track": { "sequence": 1, "release": 72, "block": 2 },
+      "description": "E1: 8-Knee Repeater L, R. RA",
+      "count": 64,
+      "reps": 1,
+      "gear": 1,
+      "start_time": 122
+    },
+    {
+      "track": { "sequence": 1, "release": 72, "block": 2 },
+      "description": "D: [rotate icon] Walk F&B L. RA",
+      "count": 8,
+      "reps": 4,
+      "gear": 1,
+      "start_time": 149
+    },
+    {
+      "track": { "sequence": 1, "release": 72, "block": 2 },
+      "description": "D1: Walk F&B to L F corner. RA",
+      "count": 8,
+      "reps": 4,
+      "gear": 1,
+      "start_time": 149
+    },
+    {
+      "track": { "sequence": 1, "release": 72, "block": 2 },
+      "description": "C: Grapevine L. HOH",
+      "count": 4,
+      "reps": 1,
+      "gear": 1,
+      "start_time": 215
+    },
+    {
+      "track": { "sequence": 1, "release": 72, "block": 3 },
+      "description": "Squat Tap L, R. Single Arm Punch F",
+      "count": 4,
+      "reps": 8,
+      "gear": 1,
+      "start_time": 414
+    },
+    {
+      "track": { "sequence": 1, "release": 72, "block": 3 },
+      "description": "E1: [rotate icon] 8-Knee Repeater L, R. RA",
+      "count": 32,
+      "reps": 1,
+      "gear": 1,
+      "start_time": 427
+    },
+    {
+      "track": { "sequence": 1, "release": 72, "block": 3 },
+      "description": "D2: Walk F&B to F. RA\nWalk F&B to LF corner. RA\nWalk F&B to F. RA\nWalk F&B to R F corner. RA",
+      "count": 8,
+      "reps": 2,
+      "gear": 1,
+      "start_time": 440
+    }
+  ],
+  "targets": [
+    {
+      "name": "Chest"
+    },
+    {
+      "name": "Arms"
+    },
+    {
+      "name": "Legs"
+    }
+  ],
+  "exercise_targets": [
+    {
+      "target": "Legs",
+      "exercise": "Walk"
+    },
+    {
+      "target": "Arms",
+      "exercise": "Reach"
+    },
+    {
+      "target": "Legs",
+      "exercise": "Knee"
+    },
+    {
+      "target": "Legs",
+      "exercise": "Squat"
+    },
+    {
+      "target": "Arms",
+      "exercise": "Punch"
     }
   ]
 }
