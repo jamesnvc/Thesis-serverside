@@ -1,0 +1,40 @@
+$def with (blocks, analysis)
+<table>
+  <tbody>
+    $for block in blocks:
+    <tr class="block">
+      <td class="label">
+        <p>Block $block.sequence:</p>
+        <p>$block.description</p>
+      </td>
+      <td>
+        <table cellspacing="0">
+          <thead>
+            <tr>
+              <th>Time</th>
+              <th>Description</th>
+              <th>Count</th>
+              <th>Reps</th>
+              <th>Works your...</th>
+            </tr>
+          </thead>
+          <tbody>
+            $for exercise in block.exercises:
+              <tr class="$loop.parity">
+                <td>$exercise.start_time</td>
+                <td>$exercise.description</td>
+                <td>$exercise.count</td>
+                <td>$exercise.reps</td>
+                <td>
+                  <ul>
+                    $for target in analysis[exercise.id]:
+                      <li>$target</li>
+                  </ul>
+                </td>
+              </tr>
+          </tbody>
+        </table>
+      </td>
+    </tr>
+  </tbody>
+</table>

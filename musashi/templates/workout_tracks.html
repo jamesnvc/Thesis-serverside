@@ -1,0 +1,6 @@
+$def with (tracks, analysis, render_fcn)
+<h1>Workout</h1>
+<ol>
+  $for track in tracks:
+    <li>Release $track.release - $track.kind - $track.song - $track.length_minutes : $track.length_seconds $:render_fcn.track_report(track.blocks, analysis[track.id]) </li>
+</ol>
