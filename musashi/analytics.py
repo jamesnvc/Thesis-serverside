@@ -22,8 +22,8 @@ class Analyzer(object):
         for target in targets:
             health[target.name] = 10
         health_seq = list()
-        for track in tracks:
-            for exercise in track:
+        for track in tracks.values():
+            for exercise in track.values():
                 for target, gear in exercise:
                     health[target] -= gear
                 health_seq.append(health.copy())
