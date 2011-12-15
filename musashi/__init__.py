@@ -32,6 +32,7 @@ analyze = analytics.Analyzer
 analyze.db = db
 analyze.render = render
 
+
 class static(object):
     content_types = {
         '.js': 'text/javascript',

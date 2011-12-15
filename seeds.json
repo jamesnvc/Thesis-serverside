@@ -306,7 +306,15 @@
   "exercise_targets": [
     {
       "target": "Legs",
+      "exercise": "Step"
+    },
+    {
+      "target": "Legs",
       "exercise": "Walk"
+    },
+    {
+      "target": "Arms",
+      "exercise": "Arm"
     },
     {
       "target": "Arms",

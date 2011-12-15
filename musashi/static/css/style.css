@@ -27,6 +27,14 @@ tr.even {
   /*color: #afa;*/
 }
 
+.quiet {
+  color: gray;
+}
+
 tr.block td.label {
   background-color: #c0ffee;
+}
+
+tr.block table td.description {
+  width: 400px;
 }

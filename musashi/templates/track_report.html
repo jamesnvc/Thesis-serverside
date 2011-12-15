@@ -8,7 +8,7 @@ $def with (blocks, analysis)
         <p>$block.description</p>
       </td>
       <td>
-        <table cellspacing="0">
+        <table>
           <thead>
             <tr>
               <th>Time</th>
@@ -22,13 +22,13 @@ $def with (blocks, analysis)
             $for exercise in block.exercises:
               <tr class="$loop.parity">
                 <td>$exercise.start_time</td>
-                <td>$exercise.description</td>
+                <td class="description">$exercise.description</td>
                 <td>$exercise.count</td>
                 <td>$exercise.reps</td>
                 <td>
                   <ul>
-                    $for target in analysis[exercise.id]:
-                      <li>$target</li>
+                    $for target, gear in analysis[exercise.id]:
+                      <li>$target <span class="quiet">$gear</span></li>
                   </ul>
                 </td>
               </tr>

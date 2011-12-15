@@ -1,5 +1,5 @@
-import web
 import collections
+import web
 
 
 class Analyzer(object):
@@ -14,23 +14,33 @@ class Analyzer(object):
                 where=("targets.id = exercise_target.target_id AND "
                        "$exercise_id = exercise_target.exercise_id"),
                 vars=dict(exercise_id=exercise.id))
-        return [target.name for target in targets]
+        return [(target.name, exercise.gear) for target in targets]
+
+    def fatigue_analysis(self, tracks):
+        targets = self.db.select('targets')
+        health = dict()
+        for target in targets:
+            health[target.name] = 10
+        health_seq = list()
+        for track in tracks:
+            for exercise in track:
+                for target, gear in exercise:
+                    health[target] -= gear
+                health_seq.append(health.copy())
+        return health_seq
+
 
     def analyze(self, tracks):
         """Run the analysis on the selected tracks."""
-        track_ids = [track.id for track in tracks]
-        exercises = self.db.select(
-                'exercises',
-                where="exercises.id IN $track_ids",
-                order="start_time",
-                vars=dict(track_ids=track_ids))
         analysis = collections.defaultdict(list)
         for track in tracks:
             analysis[track.id] = collections.defaultdict(list)
-            for exercise in exercises:
-                analysis[track.id][exercise.id] = self.exercise_targets(
-                        exercise)
-        return analysis
+            for block in track.blocks:
+                for exercise in block.exercises:
+                    analysis[track.id][exercise.id] = self.exercise_targets(
+                            exercise)
+        fatigue = self.fatigue_analysis(analysis)
+        return (analysis, fatigue)
 
     def POST(self):
         """Service the request."""
@@ -48,7 +58,7 @@ class Analyzer(object):
                     'exercises', where="block_id = $block_id",
                     order='start_time',
                     vars=dict(block_id=block.id)))
-        analysis = self.analyze(tracks)
+        analysis, _ = self.analyze(tracks)
         track_info = self.render.workout_tracks(tracks, analysis, self.render)
         web.header('Content-type', 'text/html')
         return track_info
