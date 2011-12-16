@@ -117,8 +117,13 @@
   "exercises": [
     {
       "track": { "sequence": 1, "release": 72, "block": 1 },
-      "description": "Open Chest\nReach L arm up\nReach R arm up\nRoll down and up",
-      "count": 8,
+      "description": "",
+      "moves": [
+        {"description": "Open Chest", "count": 8},
+        {"description": "Reach L arm up", "count": 8},
+        {"description": "Reach R arm up", "count": 8},
+        {"description": "Roll down and up", "count": 8}
+      ],
       "reps": 1,
       "gear": 1,
       "start_time": 4
@@ -285,8 +290,13 @@
     },
     {
       "track": { "sequence": 1, "release": 72, "block": 3 },
-      "description": "D2: Walk F&B to F. RA\nWalk F&B to LF corner. RA\nWalk F&B to F. RA\nWalk F&B to R F corner. RA",
-      "count": 8,
+      "description": "",
+      "moves": [
+        {"description": "D2: Walk F&B to F. RA", "count": 8},
+        {"description": "Walk F&B to LF corner. RA", "count": 8},
+        {"description": "Walk F&B to F. RA", "count": 8},
+        {"description": "Walk F&B to R F corner. RA", "count": 8}
+      ],
       "reps": 2,
       "gear": 1,
       "start_time": 440
@@ -306,31 +316,31 @@
   "exercise_targets": [
     {
       "target": "Legs",
-      "exercise": "Step"
+      "move": "Step"
     },
     {
       "target": "Legs",
-      "exercise": "Walk"
+      "move": "Walk"
     },
     {
       "target": "Arms",
-      "exercise": "Arm"
+      "move": "Arm"
     },
     {
       "target": "Arms",
-      "exercise": "Reach"
+      "move": "Reach"
     },
     {
       "target": "Legs",
-      "exercise": "Knee"
+      "move": "Knee"
     },
     {
       "target": "Legs",
-      "exercise": "Squat"
+      "move": "Squat"
     },
     {
       "target": "Arms",
-      "exercise": "Punch"
+      "move": "Punch"
     }
   ]
 }

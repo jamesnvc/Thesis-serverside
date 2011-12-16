@@ -8,6 +8,13 @@ init = os.path.join(os.path.dirname(__file__), '..', 'db_init.sql')
 commas = ', '.join
 
 
+def int_seq():
+    n = 0
+    while True:
+        yield n
+        n += 1
+
+
 def insert_into(table, fields):
     return "INSERT INTO {0} ({1}) VALUES ({2});".format(
         table, commas(fields), commas(['%s'] * len(fields)))
@@ -41,11 +48,25 @@ def add_exercise(exercise, cur):
         "SELECT id FROM blocks WHERE track_id = %s AND sequence = %s",
         (track_id, exercise['track']['block']))
     block_id = cur.fetchone()[0]
-    fields = ['block_id', 'description', 'count', 'reps', 'gear', 'start_time']
+    if 'moves' in exercise:
+        moves = exercise['moves']
+    else:
+        moves = [{'description': exercise['description'],
+                  'count': exercise['count']}]
+        exercise['description'] = ""
+    fields = ['block_id', 'description', 'reps', 'gear', 'start_time']
     exercise['block_id'] = block_id
     cur.execute(
-            insert_into('exercises', fields),
+            insert_into('exercises', fields)[:-1] + " RETURNING id;",
             [exercise[field] for field in fields])
+    exercise_id = cur.fetchone()[0]
+    move_fields = ['exercise_id', 'description', 'count', 'sequence']
+    seq = int_seq()
+    for move in moves:
+        move['exercise_id'] = exercise_id
+        move['sequence'] = seq.next()
+        cur.execute(insert_into('moves', move_fields),
+            [move[field] for field in move_fields])
 
 
 def add_target(target, cur):
@@ -54,16 +75,16 @@ def add_target(target, cur):
             [target[field] for field in fields])
 
 
-def add_exercise_target(exercise_target, cur):
+def add_move_target(move_target, cur):
     cur.execute("SELECT id FROM targets WHERE name = %s;",
-            (exercise_target['target'],))
+            (move_target['target'],))
     target_id = cur.fetchone()[0]
-    cur.execute("SELECT id FROM exercises WHERE description LIKE %s;",
-            ('%' + exercise_target['exercise'] + '%',))
-    id_pairs = [(target_id, exercise[0]) for exercise in cur]
+    cur.execute("SELECT id FROM moves WHERE description LIKE %s;",
+            ('%' + move_target['move'] + '%',))
+    id_pairs = [(target_id, move[0]) for move in cur]
     for id_pair in id_pairs:
         cur.execute(
-            insert_into('exercise_target', ['target_id', 'exercise_id']),
+            insert_into('move_target', ['target_id', 'move_id']),
             id_pair)
 
 
@@ -80,8 +101,8 @@ def store_data(data_file=seeds):
             add_exercise(exercise, cur)
         for target in data['targets']:
             add_target(target, cur)
-        for exercise_target in data['exercise_targets']:
-            add_exercise_target(exercise_target, cur)
+        for move_target in data['exercise_targets']:
+            add_move_target(move_target, cur)
         conn.commit()
     except Exception:
         conn.rollback()
@@ -96,8 +117,8 @@ def init_tables():
     cur = conn.cursor()
     try:
         cur.execute("DROP TABLE IF EXISTS {0};".format(
-                commas(['tracks', 'exercises', 'targets', 'exercise_target',
-                    'blocks'])))
+                commas(['tracks', 'exercises', 'targets', 'move_target',
+                    'blocks', 'moves'])))
         cur.execute(open(init).read())
         conn.commit()
     except Exception:

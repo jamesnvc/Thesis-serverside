@@ -1,3 +1,4 @@
+/* Structure */
 #container {
   text-align: center;
   width: 100%;
@@ -11,9 +12,23 @@ tr.even {
   background-color: #c0ffee;
 }
 
-.results {
-  text-align: left;
+tr.block td.label {
+  background-color: #c0ffee;
 }
+
+tr.block table td.description {
+  width: 400px;
+}
+
+ul.movelist li {
+  overflow: hidden;
+}
+
+.right {
+  float: right;
+}
+
+/* Styling classes */
 
 .error {
   border: 1px solid red;
@@ -27,14 +42,23 @@ tr.even {
   /*color: #afa;*/
 }
 
+.results {
+  text-align: left;
+}
+
 .quiet {
   color: gray;
 }
 
-tr.block td.label {
-  background-color: #c0ffee;
+.normal {
+  color: green;
 }
 
-tr.block table td.description {
-  width: 400px;
+.warn {
+  color: red;
+}
+
+.extreme {
+  color: red;
+  font-weight: bold;
 }

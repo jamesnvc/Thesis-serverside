@@ -1,4 +1,4 @@
-$def with (blocks, analysis)
+$def with (blocks, analysis, fatigue)
 <table>
   <tbody>
     $for block in blocks:
@@ -13,24 +13,43 @@ $def with (blocks, analysis)
             <tr>
               <th>Time</th>
               <th>Description</th>
-              <th>Count</th>
               <th>Reps</th>
               <th>Works your...</th>
+              <th>Accumulated fatigue</th>
             </tr>
           </thead>
           <tbody>
             $for exercise in block.exercises:
               <tr class="$loop.parity">
                 <td>$exercise.start_time</td>
-                <td class="description">$exercise.description</td>
-                <td>$exercise.count</td>
-                <td>$exercise.reps</td>
+                <td class="description">
+                  $exercise.description
+                  <ul class="movelist">
+                    $for move in exercise.moves:
+                      <li>$move.description <span class="right">$move.count count</span></li>
+                  </ul>
+                </td>
+                <td>x $exercise.reps</td>
                 <td>
                   <ul>
                     $for target, gear in analysis[exercise.id]:
-                      <li>$target <span class="quiet">$gear</span></li>
+                      <li>$target <span class="quiet">Gear $gear</span></li>
                   </ul>
                 </td>
+               $ parts = fatigue.next()
+               <td>
+                 <dl>
+                   $for part, tired in parts.iteritems():
+                     <dt>$part</dt>
+                     $if tired < 2:
+                       $ warn = "extreme"
+                     $elif tired > 6:
+                       $ warn = "normal"
+                     $else:
+                       $ warn = "warn"
+                     <dd class="$warn">$(10 - tired)</dd>
+                 </dl>
+               </td>
               </tr>
           </tbody>
         </table>

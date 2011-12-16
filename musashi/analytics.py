@@ -9,11 +9,12 @@ class Analyzer(object):
 
     def exercise_targets(self, exercise):
         """Get the targets corresponding to the given exercise."""
+        move_ids = [move.id for move in exercise.moves]
         targets = self.db.select(
-                ['targets', 'exercise_target'],
-                where=("targets.id = exercise_target.target_id AND "
-                       "$exercise_id = exercise_target.exercise_id"),
-                vars=dict(exercise_id=exercise.id))
+                ['targets', 'move_target'],
+                where=("targets.id = move_target.target_id AND "
+                       "move_target.move_id IN $move_ids"),
+                vars=dict(move_ids=move_ids))
         return [(target.name, exercise.gear) for target in targets]
 
     def fatigue_analysis(self, tracks):
@@ -24,10 +25,13 @@ class Analyzer(object):
         health_seq = list()
         for track in tracks.values():
             for exercise in track.values():
+                for target in health:
+                    if health[target] < 10:
+                        health[target] += 1
                 for target, gear in exercise:
                     health[target] -= gear
                 health_seq.append(health.copy())
-        return health_seq
+        return reversed(health_seq)
 
 
     def analyze(self, tracks):
@@ -58,7 +62,11 @@ class Analyzer(object):
                     'exercises', where="block_id = $block_id",
                     order='start_time',
                     vars=dict(block_id=block.id)))
-        analysis, _ = self.analyze(tracks)
-        track_info = self.render.workout_tracks(tracks, analysis, self.render)
+                for exercise in block.exercises:
+                    exercise.moves = list(self.db.select(
+                        'moves', where="exercise_id = $exercise_id",
+                        order='sequence', vars=dict(exercise_id=exercise.id)))
+        analysis, fatigue = self.analyze(tracks)
+        track_info = self.render.workout_tracks(tracks, analysis, fatigue, self.render)
         web.header('Content-type', 'text/html')
         return track_info

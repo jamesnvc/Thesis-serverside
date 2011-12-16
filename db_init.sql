@@ -18,23 +18,31 @@ CREATE TABLE blocks (
 );
 
 -- Exercise belongs to a block, has many targets
+-- TODO: Rename to sequence, break this into moves
 CREATE TABLE exercises (
   id SERIAL PRIMARY KEY,
   block_id INT,
   description TEXT,
-  count INT,
   reps INT,
   gear INT,
   start_time INT
 );
 
--- Target has and belongs to many exercises
+CREATE TABLE moves (
+  id SERIAL PRIMARY KEY,
+  sequence INT,
+  exercise_id INT,
+  description TEXT,
+  count INT
+);
+
+-- Target has and belongs to many moves
 CREATE TABLE targets (
   id SERIAL PRIMARY KEY,
   name TEXT
 );
 
-CREATE TABLE exercise_target (
-  exercise_id INT,
+CREATE TABLE move_target (
+  move_id INT,
   target_id INT
 );
