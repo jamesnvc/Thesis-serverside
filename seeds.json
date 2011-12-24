@@ -112,6 +112,26 @@
       "track": { "sequence": 1, "release": 72 },
       "sequence": 3,
       "description": "Herp derp"
+    },
+    {
+      "track": { "sequence": 2, "release": 72 },
+      "sequence": 1,
+      "description": "Intro"
+    },
+    {
+      "track": { "sequence": 2, "release": 72 },
+      "sequence": 2,
+      "description": "Stuff"
+    },
+    {
+      "track": { "sequence": 2, "release": 72 },
+      "sequence": 3,
+      "description": "Repeat sequences A to D"
+    },
+    {
+      "track": { "sequence": 2, "release": 72 },
+      "sequence": 4,
+      "description": ""
     }
   ],
   "exercises": [
@@ -190,7 +210,7 @@
       "count": 8,
       "reps": 4,
       "gear": 1,
-      "start_time": 149
+      "start_time": 202
     },
     {
       "track": { "sequence": 1, "release": 72, "block": 1 },
@@ -206,7 +226,7 @@
       "count": 4,
       "reps": 8,
       "gear": 1,
-      "start_time": 17
+      "start_time": 232
     },
     {
       "track": { "sequence": 1, "release": 72, "block": 2 },
@@ -214,7 +234,7 @@
       "count": 8,
       "reps": 4,
       "gear": 1,
-      "start_time": 30
+      "start_time": 245
     },
     {
       "track": { "sequence": 1, "release": 72, "block": 2 },
@@ -222,7 +242,7 @@
       "count": 8,
       "reps": 4,
       "gear": 1,
-      "start_time": 43
+      "start_time": 258
     },
     {
       "track": { "sequence": 1, "release": 72, "block": 2 },
@@ -230,7 +250,7 @@
       "count": 8,
       "reps": 4,
       "gear": 1,
-      "start_time": 56
+      "start_time": 271
     },
     {
       "track": { "sequence": 1, "release": 72, "block": 2 },
@@ -238,7 +258,7 @@
       "count": 32,
       "reps": 1,
       "gear": 1,
-      "start_time": 109
+      "start_time": 324
     },
     {
       "track": { "sequence": 1, "release": 72, "block": 2 },
@@ -246,7 +266,7 @@
       "count": 64,
       "reps": 1,
       "gear": 1,
-      "start_time": 122
+      "start_time": 337
     },
     {
       "track": { "sequence": 1, "release": 72, "block": 2 },
@@ -254,7 +274,7 @@
       "count": 8,
       "reps": 4,
       "gear": 1,
-      "start_time": 149
+      "start_time": 364
     },
     {
       "track": { "sequence": 1, "release": 72, "block": 2 },
@@ -262,15 +282,7 @@
       "count": 8,
       "reps": 4,
       "gear": 1,
-      "start_time": 149
-    },
-    {
-      "track": { "sequence": 1, "release": 72, "block": 2 },
-      "description": "C: Grapevine L. HOH",
-      "count": 4,
-      "reps": 1,
-      "gear": 1,
-      "start_time": 215
+      "start_time": 364
     },
     {
       "track": { "sequence": 1, "release": 72, "block": 3 },
@@ -300,6 +312,127 @@
       "reps": 2,
       "gear": 1,
       "start_time": 440
+    },
+    {
+      "track": { "sequence": 2, "release": 72, "block": 1 },
+      "description": "Run OTS. (RA)",
+      "count": 32,
+      "reps": 1,
+      "gear": 2,
+      "start_time": 0
+    },
+    {
+      "track": { "sequence": 2, "release": 72, "block": 1 },
+      "description": "Run F&B combo",
+      "moves": [
+        {"description": "Jog F. Double Arm Punch F x4", "count": 8},
+        {"description": "Jog OTS. Open Arm Chest Clap x4", "count": 8},
+        {"description": "Jog B. Double Arm Punch F x4", "count": 8},
+        {"description": "Jog OTS. Open Arm Chest Clap x4", "count": 8}
+      ],
+      "reps": 2,
+      "gear": 2,
+      "start_time": 12
+    },
+    /* TODO: How should this work with A & B, different count & reps */
+    {
+      "track": { "sequence": 2, "release": 72, "block": 2 },
+      "description": "",
+      "moves": [
+        {"description": "A: Step Curl L, R. Cross Pull Arms", "count": 4},
+        {"description": "B: Gallop L, R. Double Arm Reach F", "count": 8}
+      ],
+      "reps": 8,
+      "gear": 1,
+      "start_time": 37
+    },
+    {
+      "track": { "sequence": 2, "release": 72, "block": 2 },
+      "description": "C: [Repeat logo] Run F&B Combo",
+      "count": 32,
+      "reps": 2,
+      "gear": 2,
+      "start_time": 102
+    },
+    {
+      "track": { "sequence": 2, "release": 72, "block": 2 },
+      "description": "D: Heel Dig L, R. Cross Pull Arms",
+      "count": 4,
+      "reps": 8,
+      "gear": 2,
+      "start_time": 102
+    },
+    /* TODO: How should this work with A & B, different count & reps */
+    {
+      "track": { "sequence": 2, "release": 72, "block": 3 },
+      "description": "",
+      "moves": [
+        {"description": "A: Step Curl L, R. Cross Pull Arms", "count": 4},
+        {"description": "B: Gallop L, R. Double Arm Reach F", "count": 8}
+      ],
+      "reps": 8,
+      "gear": 1,
+      "start_time": 140
+    },
+    {
+      "track": { "sequence": 2, "release": 72, "block": 3 },
+      "description": "C: [Repeat logo] Run F&B Combo",
+      "count": 32,
+      "reps": 2,
+      "gear": 2,
+      "start_time": 212
+    },
+    {
+      "track": { "sequence": 2, "release": 72, "block": 3 },
+      "description": "D: Heel Dig L, R. Cross Pull Arms",
+      "count": 4,
+      "reps": 8,
+      "gear": 2,
+      "start_time": 235
+    },
+    /* TODO: How should this work with A & B, different count & reps */
+    {
+      "track": { "sequence": 2, "release": 72, "block": 4 },
+      "description": "",
+      "moves": [
+        {"description": "A: [Repeat Logo] Step Curl L, R. Cross Pull Arms", "count": "4"},
+        {"description": "E: Double Step Curl L, R. Cross Pull Arms", "count": "8"}
+      ],
+      "reps": 8,
+      "gear": 1,
+      "start_time": 242
+    },
+    {
+      "track": { "sequence": 2, "release": 72, "block": 4 },
+      "description": "Step Curl & Heel Dig Combo",
+      "moves": [
+        {"description": "E1: Step Curl L. Cross Pull Arms", "count": "2"},
+        {"description": "Heel Dig R. Cross Pull Arms", "count": "2"},
+        {"description": "Repeat R", "count": "4"},
+      ],
+      "reps": 4,
+      "gear": 1,
+      "start_time": 308
+    },
+    {
+      "track": { "sequence": 2, "release": 72, "block": 4 },
+      "description": "",
+      "moves": [
+        {"description": "E2: Step Curl L. Cross Pull Arms", "count": "2"},
+        {"description": "Heel Dig R. Double Arm Reach Up", "count": "2"},
+        {"description": "Repeat R", "count": "4"},
+      ],
+      "reps": 4,
+      "gear": 1,
+      "start_time": 320
+    },
+    {
+      "track": { "sequence": 2, "release": 72, "block": 4 },
+      "description": "C: [Repeat Logo] Run F&B Combo",
+      "count": 32,
+      "reps": 2,
+      "gear": 1,
+      "start_time": 320
     }
   ],
   "targets": [
