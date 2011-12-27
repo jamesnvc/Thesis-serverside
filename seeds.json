@@ -132,6 +132,26 @@
       "track": { "sequence": 2, "release": 72 },
       "sequence": 4,
       "description": ""
+    },
+    {
+      "track": { "sequence": 3, "release": 72 },
+      "sequence": 1,
+      "description": ""
+    },
+    {
+      "track": { "sequence": 3, "release": 72 },
+      "sequence": 2,
+      "description": ""
+    },
+    {
+      "track": { "sequence": 3, "release": 72 },
+      "sequence": 3,
+      "description": "Repeat sequences A to D"
+    },
+    {
+      "track": { "sequence": 3, "release": 72 },
+      "sequence": 4,
+      "description": ""
     }
   ],
   "exercises": [
@@ -313,6 +333,8 @@
       "gear": 1,
       "start_time": 440
     },
+
+
     {
       "track": { "sequence": 2, "release": 72, "block": 1 },
       "description": "Run OTS. (RA)",
@@ -423,7 +445,7 @@
         {"description": "Repeat R", "count": "4"},
       ],
       "reps": 4,
-      "gear": 1,
+      "gear": 2,
       "start_time": 320
     },
     {
@@ -431,8 +453,182 @@
       "description": "C: [Repeat Logo] Run F&B Combo",
       "count": 32,
       "reps": 2,
+      "gear": 2,
+      "start_time": 333
+    },
+
+
+    {
+      "track": { "sequence": 3, "release": 72, "block": 1 },
+      "description": "",
+      "moves": [
+        {"description": "Run F. RA", "count": 8},
+        {"description": "Run B. RA", "count": 8}
+      ],
+      "reps": 4,
+      "gear": 2,
+      "start_time": 0
+    },
+    {
+      "track": { "sequence": 3, "release": 72, "block": 1 },
+      "description": "[Eye icon] 180° turn on last 8 cts",
+      "moves": [
+        {"description": "Run F. Double Arm Reach Up", "count": 8},
+        {"description": "Run B. RA", "count": 8}
+      ],
+      "reps": 4,
+      "gear": 2,
+      "start_time": 23
+    },
+    {
+      "track": { "sequence": 3, "release": 72, "block": 1 },
+      "description": "Run F & 180° turn combo",
+      "moves": [
+        {"description": "Run F. Double Arm Reach Up x4", "count": 8},
+        {"description": "Jog OTS, turn around 180° to face B", "count": 1},
+        {"description": "Run F to B. RA", "count": 8},
+        {"description": "Jog OTS turn around 180° to face F", "count": 1}
+      ],
+      "reps": 2,
+      "gear": 2,
+      "start_time": 35
+    },
+    {
+      "track": { "sequence": 3, "release": 72, "block": 2 },
+      "description": "A: Single knee lift L, R. Single Arm Punch F",
+      "count": 4,
+      "reps": 8,
       "gear": 1,
-      "start_time": 320
+      "start_time": 47
+    },
+    {
+      "track": { "sequence": 3, "release": 72, "block": 2 },
+      "description": "B",
+      "moves": [
+        {"description": "Double KNee Lift L, R. Double Arm Punch F", "count": 8},
+        {"description": "Knee Crossover L, R. Double Arm Punch F", "count": 8}
+      ],
+      "reps": 2,
+      "gear": 2,
+      "start_time": 59
+    },
+    {
+      "track": { "sequence": 3, "release": 72, "block": 2 },
+      "description": "B2 Double Knee Behind L, R. Double Arm Punch F",
+      "count": 8,
+      "reps": 4,
+      "gear": 2,
+      "start_time": 111
+    },
+    {
+      "track": { "sequence": 3, "release": 72, "block": 2 },
+      "description": "C: 4x Superman R, L. Diagonal Arm Punch",
+      "count": 16,
+      "reps": 2,
+      "gear": 2,
+      "start_time": 123
+    },
+    {
+      "track": { "sequence": 3, "release": 72, "block": 2 },
+      "description": "Superman & Jump Combo\nC1",
+      "moves": [
+        {"description": "Superman R x3. Diagonal Arm Punch", "count": 6},
+        {"description": "Double Jump F&B. Double Arm Punch F.", "count": 2},
+        {"description": "Repeat L", "count": 8}
+      ],
+      "reps": 2,
+      "gear": 3,
+      "start_time": 135
+    },
+    {
+      "track": { "sequence": 3, "release": 72, "block": 2 },
+      "description": "D: [Repeat logo] Run F & 180° Turn Combo",
+      "count": 16,
+      "reps": 4,
+      "gear": 3,
+      "start_time": 147
+    },
+    {
+      "track": { "sequence": 3, "release": 72, "block": 3 },
+      "description": "A: Single knee lift L, R. Single Arm Punch F",
+      "count": 4,
+      "reps": 8,
+      "gear": 1,
+      "start_time": 211
+    },
+    {
+      "track": { "sequence": 3, "release": 72, "block": 3 },
+      "description": "B",
+      "moves": [
+        {"description": "Double KNee Lift L, R. Double Arm Punch F", "count": 8},
+        {"description": "Knee Crossover L, R. Double Arm Punch F", "count": 8}
+      ],
+      "reps": 2,
+      "gear": 2,
+      "start_time": 263
+    },
+    {
+      "track": { "sequence": 3, "release": 72, "block": 3 },
+      "description": "B2 Double Knee Behind L, R. Double Arm Punch F",
+      "count": 8,
+      "reps": 4,
+      "gear": 2,
+      "start_time": 275
+    },
+    {
+      "track": { "sequence": 3, "release": 72, "block": 3 },
+      "description": "C: 4x Superman R, L. Diagonal Arm Punch",
+      "count": 16,
+      "reps": 2,
+      "gear": 2,
+      "start_time": 287
+    },
+    {
+      "track": { "sequence": 3, "release": 72, "block": 3 },
+      "description": "Superman & Jump Combo\nC1",
+      "moves": [
+        {"description": "Superman R x3. Diagonal Arm Punch", "count": 6},
+        {"description": "Double Jump F&B. Double Arm Punch F.", "count": 2},
+        {"description": "Repeat L", "count": 8}
+      ],
+      "reps": 2,
+      "gear": 3,
+      "start_time": 299
+    },
+    {
+      "track": { "sequence": 3, "release": 72, "block": 3 },
+      "description": "D: [Repeat logo] Run F & 180° Turn Combo",
+      "count": 16,
+      "reps": 4,
+      "gear": 3,
+      "start_time": 311
+    },
+    {
+      "track": { "sequence": 3, "release": 72, "block": 4 },
+      "description": "E: Single Side Flick L, R. Straight Arm Side Raise",
+      "count": 4,
+      "reps": 8,
+      "gear": 2,
+      "start_time": 335
+    },
+    {
+      "track": { "sequence": 3, "release": 72, "block": 4 },
+      "description": "F: Jumping Jack. Double Arm Reach Up",
+      "count": 2,
+      "reps": 16,
+      "gear": 2,
+      "start_time": 347
+    },
+    {
+      "track": { "sequence": 3, "release": 72, "block": 4 },
+      "description": "Run & Side Flick Combo\nG",
+      "moves": [
+        {"description": "Run F. RA - turn 180° to face B", "count": 8},
+        {"description": "Run to B. RA - turn 180° to face F", "count": 8},
+      ],
+      "reps": 2,
+      "gear": 3,
+      "start_time": 359
     }
   ],
   "targets": [
