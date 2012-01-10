@@ -152,6 +152,206 @@
       "track": { "sequence": 3, "release": 72 },
       "sequence": 4,
       "description": ""
+    },
+    {
+      "track": { "sequence": 4, "release": 72 },
+      "sequence": 1,
+      "description": ""
+    },
+    {
+      "track": { "sequence": 4, "release": 72 },
+      "sequence": 2,
+      "description": ""
+    },
+    {
+      "track": { "sequence": 4, "release": 72 },
+      "sequence": 4,
+      "description": "Repeat sequences above (A to B2)"
+    },
+    {
+      "track": { "sequence": 4, "release": 72 },
+      "sequence": 4,
+      "description": ""
+    },
+    {
+      "track": { "sequence": 5, "release": 72 },
+      "sequence": 1,
+      "description": ""
+    },
+    {
+      "track": { "sequence": 5, "release": 72 },
+      "sequence": 2,
+      "description": ""
+    },
+    {
+      "track": { "sequence": 5, "release": 72 },
+      "sequence": 4,
+      "description": "Repeat sequences above (A to B2)"
+    },
+    {
+      "track": { "sequence": 5, "release": 72 },
+      "sequence": 4,
+      "description": ""
+    },
+    {
+      "track": { "sequence": 6, "release": 72 },
+      "sequence": 1,
+      "description": ""
+    },
+    {
+      "track": { "sequence": 6, "release": 72 },
+      "sequence": 2,
+      "description": ""
+    },
+    {
+      "track": { "sequence": 6, "release": 72 },
+      "sequence": 3,
+      "description": "Repeat sequences A to D"
+    },
+    {
+      "track": { "sequence": 6, "release": 72 },
+      "sequence": 4,
+      "description": ""
+    },
+    {
+      "track": { "sequence": 7, "release": 72 },
+      "sequence": 1,
+      "description": ""
+    },
+    {
+      "track": { "sequence": 7, "release": 72 },
+      "sequence": 2,
+      "description": ""
+    },
+    {
+      "track": { "sequence": 7, "release": 72 },
+      "sequence": 3,
+      "description": "Repeat sequences A to D"
+    },
+    {
+      "track": { "sequence": 7, "release": 72 },
+      "sequence": 4,
+      "description": "Repeat sequences A to D"
+    },
+    {
+      "track": { "sequence": 7, "release": 72 },
+      "sequence": 5,
+      "description": ""
+    },
+    {
+      "track": { "sequence": 7, "release": 72 },
+      "sequence": 6,
+      "description": "Repeat sequences B to D"
+    },
+    {
+      "track": { "sequence": 8, "release": 72 },
+      "sequence": 1,
+      "description": ""
+    },
+    {
+      "track": { "sequence": 8, "release": 72 },
+      "sequence": 2,
+      "description": ""
+    },
+    {
+      "track": { "sequence": 8, "release": 72 },
+      "sequence": 3,
+      "description": ""
+    },
+    {
+      "track": { "sequence": 8, "release": 72 },
+      "sequence": 4,
+      "description": "Repeat sequences B to E"
+    },
+    {
+      "track": { "sequence": 8, "release": 72 },
+      "sequence": 5,
+      "description": ""
+    },
+    {
+      "track": { "sequence": 9, "release": 72 },
+      "sequence": 1,
+      "description": ""
+    },
+    {
+      "track": { "sequence": 9, "release": 72 },
+      "sequence": 2,
+      "description": ""
+    },
+    {
+      "track": { "sequence": 9, "release": 72 },
+      "sequence": 3,
+      "description": ""
+    },
+    {
+      "track": { "sequence": 9, "release": 72 },
+      "sequence": 4,
+      "description": ""
+    },
+    {
+      "track": { "sequence": 10, "release": 72 },
+      "sequence": 1,
+      "description": ""
+    },
+    {
+      "track": { "sequence": 10, "release": 72 },
+      "sequence": 2,
+      "description": ""
+    },
+    {
+      "track": { "sequence": 10, "release": 72 },
+      "sequence": 3,
+      "description": "Repeat Sequences A1 to C (R side)"
+    },
+    {
+      "track": { "sequence": 10, "release": 72 },
+      "sequence": 4,
+      "description": ""
+    },
+    {
+      "track": { "sequence": 11, "release": 72 },
+      "sequence": 1,
+      "description": ""
+    },
+    {
+      "track": { "sequence": 11, "release": 72 },
+      "sequence": 2,
+      "description": ""
+    },
+    {
+      "track": { "sequence": 11, "release": 72 },
+      "sequence": 3,
+      "description": ""
+    },
+    {
+      "track": { "sequence": 11, "release": 72 },
+      "sequence": 4,
+      "description": ""
+    },
+    {
+      "track": { "sequence": 11, "release": 72 },
+      "sequence": 5,
+      "description": ""
+    },
+    {
+      "track": { "sequence": 11, "release": 72 },
+      "sequence": 6,
+      "description": ""
+    },
+    {
+      "track": { "sequence": 11, "release": 72 },
+      "sequence": 7,
+      "description": ""
+    },
+    {
+      "track": { "sequence": 11, "release": 72 },
+      "sequence": 8,
+      "description": ""
+    },
+    {
+      "track": { "sequence": 12, "release": 72 },
+      "sequence": 1,
+      "description": ""
     }
   ],
   "exercises": [
@@ -430,7 +630,7 @@
       "moves": [
         {"description": "E1: Step Curl L. Cross Pull Arms", "count": "2"},
         {"description": "Heel Dig R. Cross Pull Arms", "count": "2"},
-        {"description": "Repeat R", "count": "4"},
+        {"description": "Repeat R", "count": "4"}
       ],
       "reps": 4,
       "gear": 1,
@@ -442,7 +642,7 @@
       "moves": [
         {"description": "E2: Step Curl L. Cross Pull Arms", "count": "2"},
         {"description": "Heel Dig R. Double Arm Reach Up", "count": "2"},
-        {"description": "Repeat R", "count": "4"},
+        {"description": "Repeat R", "count": "4"}
       ],
       "reps": 4,
       "gear": 2,
@@ -624,11 +824,1563 @@
       "description": "Run & Side Flick Combo\nG",
       "moves": [
         {"description": "Run F. RA - turn 180° to face B", "count": 8},
-        {"description": "Run to B. RA - turn 180° to face F", "count": 8},
+        {"description": "Run to B. RA - turn 180° to face F", "count": 8}
       ],
       "reps": 2,
       "gear": 3,
       "start_time": 359
+    },
+    {
+      "track": { "sequence": 3, "release": 72, "block": 4 },
+      "description": "[Repeat icon] Run & Side Flick Combo",
+      "count": 32,
+      "reps": 3,
+      "gear": 3,
+      "start_time": 423
+    },
+    {
+      "track": { "sequence": 3, "release": 72, "block": 4 },
+      "description": "F: [Repeat icon] Jumping Jack. Double Arm Reach Up",
+      "count": 2,
+      "reps": 16,
+      "gear": 3,
+      "start_time": 459
+    },
+
+    {
+      "track": { "sequence": 4, "release": 72, "block": 1 },
+      "description": "Run OTS. RA",
+      "count": 32,
+      "reps": 1,
+      "gear": 2,
+      "start_time": 0
+    },
+    {
+      "track": { "sequence": 4, "release": 72, "block": 1 },
+      "description": "",
+      "moves": [
+        {"description": "High Knee Run F. RA", "count": 16},
+        {"description": "High Knee Run OTS. RA", "count": 16}
+      ],
+      "reps": 1,
+      "gear": 2,
+      "start_time": 12
+    },
+    {
+      "track": { "sequence": 4, "release": 72, "block": 1 },
+      "description": "",
+      "moves": [
+        {"description": "Shuffle L&R B. RA", "count": 16},
+        {"description": "Shuffle L&R OTS. RA", "count": 16}
+      ],
+      "reps": 1,
+      "gear": 2,
+      "start_time": 24
+    },
+    {
+      "track": { "sequence": 4, "release": 72, "block": 1 },
+      "description": "Jog F. RA",
+      "count": 8,
+      "reps": 1,
+      "gear": 1,
+      "start_time": 36
+    },
+    {
+      "track": { "sequence": 4, "release": 72, "block": 1 },
+      "description": "4x Lunge & Squat Jump Combo",
+      "moves": [
+        {"description": "Plyometric Lunge L, R x2. RA", "count": 8},
+        {"description": "Squat Jump x4. Hands on thighs", "count": 8}
+      ],
+      "reps": 4,
+      "gear": 1,
+      "start_time": 39
+    },
+    {
+      "track": { "sequence": 4, "release": 72, "block": 1 },
+      "description": "",
+      "moves": [
+        {"description": "Jog B. RA", "count": 8},
+        {"description": "Bounce OTS. Relaxed Arms", "count": 8}
+      ],
+      "reps": 1,
+      "gear": 1,
+      "start_time": 102
+    },
+    {
+      "track": { "sequence": 4, "release": 72, "block": 2 },
+      "description": "Run & Hop Combo\nA",
+      "moves": [
+        {"description": "high Knee Run F. RA", "count": 8},
+        {"description": "Double Knee Hop L, R x2. Double Arm Bicep Curl", "count": 8},
+        {"description": "Repeat B", "count": 16}
+      ],
+      "reps": 2,
+      "gear": 1,
+      "start_time": 108
+    },
+    {
+      "track": { "sequence": 4, "release": 72, "block": 2 },
+      "description": "B: Run F. RA",
+      "count": 8,
+      "reps": 1,
+      "gear": 1,
+      "start_time": 130
+    },
+    {
+      "track": { "sequence": 4, "release": 72, "block": 2 },
+      "description": "C: Shuffle L*R OTS. RA",
+      "count": 2,
+      "reps": 16,
+      "gear": 2,
+      "start_time": 134
+    },
+    {
+      "track": { "sequence": 4, "release": 72, "block": 2 },
+      "description": "D: [Repeat icon] 4x Lunge & Squat Combo",
+      "count": 16,
+      "reps": 4,
+      "gear": 3,
+      "start_time": 146
+    },
+    {
+      "track": { "sequence": 4, "release": 72, "block": 2 },
+      "description": "2x Lunge & Squat Jump Combo\nD1",
+      "moves": [
+        {"description": "Plyometric Lunge L, R. RA", "count": 4},
+        {"description": "Squat Combo x2. Hands on thighs", "count": 4}
+      ],
+      "reps": 4,
+      "gear": 3,
+      "start_time": 209
+    },
+    {
+      "track": { "sequence": 4, "release": 72, "block": 2 },
+      "description": "",
+      "moves": [
+        {"description": "B1: Jog B. RA", "count": 8},
+        {"description": "B2: Bounce OTS. Relexad Arms", "count": 8}
+      ],
+      "reps": 1,
+      "gear": 1,
+      "start_time": 221
+    },
+    {
+      "track": { "sequence": 4, "release": 72, "block": 3 },
+      "description": "Run & Hop Combo\nA",
+      "moves": [
+        {"description": "high Knee Run F. RA", "count": 8},
+        {"description": "Double Knee Hop L, R x2. Double Arm Bicep Curl", "count": 8},
+        {"description": "Repeat B", "count": 16}
+      ],
+      "reps": 2,
+      "gear": 1,
+      "start_time": 227
+    },
+    {
+      "track": { "sequence": 4, "release": 72, "block": 3 },
+      "description": "B: Run F. RA",
+      "count": 8,
+      "reps": 1,
+      "gear": 1,
+      "start_time": 249
+    },
+    {
+      "track": { "sequence": 4, "release": 72, "block": 3 },
+      "description": "C: Shuffle L*R OTS. RA",
+      "count": 2,
+      "reps": 16,
+      "gear": 2,
+      "start_time": 253
+    },
+    {
+      "track": { "sequence": 4, "release": 72, "block": 3 },
+      "description": "D: [Repeat icon] 4x Lunge & Squat Combo",
+      "count": 16,
+      "reps": 4,
+      "gear": 3,
+      "start_time": 305
+    },
+    {
+      "track": { "sequence": 4, "release": 72, "block": 3 },
+      "description": "2x Lunge & Squat Jump Combo\nD1",
+      "moves": [
+        {"description": "Plyometric Lunge L, R. RA", "count": 4},
+        {"description": "Squat Combo x2. Hands on thighs", "count": 4}
+      ],
+      "reps": 4,
+      "gear": 3,
+      "start_time": 328
+    },
+    {
+      "track": { "sequence": 4, "release": 72, "block": 3 },
+      "description": "",
+      "moves": [
+        {"description": "B1: Jog B. RA", "count": 8},
+        {"description": "B2: Bounce OTS. Relexad Arms", "count": 8}
+      ],
+      "reps": 1,
+      "gear": 1,
+      "start_time": 340
+    },
+    {
+      "track": { "sequence": 4, "release": 72, "block": 4 },
+      "description": "A: [Repeat icon] Run & Double Knee Hop Combo",
+      "count": 32,
+      "reps": 1,
+      "gear": 2,
+      "start_time": 346
+    },
+    {
+      "track": { "sequence": 4, "release": 72, "block": 4 },
+      "description": "Hold",
+      "count": 4,
+      "reps": 1,
+      "gear": 2,
+      "start_time": 358
+    },
+    {
+      "track": { "sequence": 4, "release": 72, "block": 4 },
+      "description": "D: [Repeat icon] 4x Lunge & Squat Jump Combo",
+      "count": 16,
+      "reps": 4,
+      "gear": 3,
+      "start_time": 359
+    },
+    {
+      "track": { "sequence": 4, "release": 72, "block": 4 },
+      "description": "D1: [Repeat icon] 2x Lunge & Squat Jump Combo",
+      "count": 8,
+      "reps": 4,
+      "gear": 3,
+      "start_time": 422
+    },
+    {
+      "track": { "sequence": 4, "release": 72, "block": 4 },
+      "description": "E: Single Plyometric Lung L, R. RA",
+      "count": 4,
+      "reps": 8,
+      "gear": 3,
+      "start_time": 434
+    },
+
+    /* TODO: Gear missing for this track? */
+    {
+      "track": { "sequence": 5, "release": 72, "block": 1 },
+      "description": "",
+      "moves": [
+        {"description": "Step Touch L&R", "count": 32},
+        {"description": "Transition to floor", "count": 32}
+      ],
+      "reps": 8,
+      "gear": 1,
+      "start_time": 0
+    },
+    {
+      "track": { "sequence": 5, "release": 72, "block": 2 },
+      "description": "Walking Burpee\nA",
+      "moves": [
+        {"description": "L foot to L hand", "count": 4},
+        {"description": "R foot to R hand", "count": 4},
+        {"description": "Hands to thighs - Squat position", "count": 4},
+        {"description": "Stand up. Hands to ceiling", "count": 4},
+        {"description": "Hands to thighs - Squat position", "count": 4},
+        {"description": "Hands to floor", "count": 4},
+        {"description": "Step L foot B", "count": 4},
+        {"description": "Step R foot B to Plank Start position", "count": 4}
+      ],
+      "reps": 2,
+      "gear": 1,
+      "start_time": 30
+    },
+    {
+      "track": { "sequence": 5, "release": 72, "block": 2 },
+      "description": "B: Tricep Pushup",
+      "count": 4,
+      "reps": 8,
+      "gear": 1,
+      "start_time": 100
+    },
+    {
+      "track": { "sequence": 5, "release": 72, "block": 2 },
+      "description": "C: Chest Pushup",
+      "count": 4,
+      "reps": 8,
+      "gear": 1,
+      "start_time": 115
+    },
+    {
+      "track": { "sequence": 5, "release": 72, "block": 2 },
+      "description": "D: Chest Pushup Bottom Half Pulse x3",
+      "count": 8,
+      "reps": 4,
+      "gear": 1,
+      "start_time": 130
+    },
+    {
+      "track": { "sequence": 5, "release": 72, "block": 3 },
+      "description": "Reset Plank position on toes",
+      "count": 16,
+      "reps": 1,
+      "gear": 1,
+      "start_time": 145
+    },
+    {
+      "track": { "sequence": 5, "release": 72, "block": 3 },
+      "description": "Fast Walking Burpee\nA1",
+      "moves": [
+        {"description": "L foot to L hand", "count": 1},
+        {"description": "R foot to R hand", "count": 1},
+        {"description": "Hands to thighs - Squat position", "count": 1},
+        {"description": "Stand up. Hands to ceiling", "count": 1},
+        {"description": "Hands to thighs - Squat position", "count": 1},
+        {"description": "Hands to floor", "count": 1},
+        {"description": "Step L foot B", "count": 1},
+        {"description": "Step R foot B to Plank Start position", "count": 1}
+      ],
+      "reps": 8,
+      "gear": 1,
+      "start_time": 152
+    },
+    {
+      "track": { "sequence": 5, "release": 72, "block": 3 },
+      "description": "B: Tricep Pushup",
+      "count": 4,
+      "reps": 8,
+      "gear": 1,
+      "start_time": 223
+    },
+    {
+      "track": { "sequence": 5, "release": 72, "block": 3 },
+      "description": "C: Chest Pushup",
+      "count": 4,
+      "reps": 8,
+      "gear": 1,
+      "start_time": 238
+    },
+    {
+      "track": { "sequence": 5, "release": 72, "block": 3 },
+      "description": "D: Chest Pushup Bottom Half Pulse x3",
+      "count": 8,
+      "reps": 4,
+      "gear": 1,
+      "start_time": 253
+    },
+    {
+      "track": { "sequence": 5, "release": 72, "block": 4 },
+      "description": "Reset Plank position on toes",
+      "count": 1,
+      "reps": 1,
+      "gear": 1,
+      "start_time": 309
+    },
+    {
+      "track": { "sequence": 5, "release": 72, "block": 4 },
+      "description": "A1: [Repeat icon] Walking Burpee (Fast)",
+      "count": 8,
+      "reps": 8,
+      "gear": 1,
+      "start_time": 317
+    },
+    {
+      "track": { "sequence": 5, "release": 72, "block": 4 },
+      "description": "B: [Repeat icon] Tricep Pushup",
+      "count": 4,
+      "reps": 16,
+      "gear": 1,
+      "start_time": 347
+    },
+    {
+      "track": { "sequence": 5, "release": 72, "block": 4 },
+      "description": "C: [Repeat icon] Chest Pushup",
+      "count": 4,
+      "reps": 16,
+      "gear": 1,
+      "start_time": 417
+    },
+
+    {
+      "track": { "sequence": 6, "release": 72, "block": 1 },
+      "description": "Transition up from floor. Jog OTS. RA",
+      "count": 64,
+      "reps": 1,
+      "gear": 1,
+      "start_time": 0
+    },
+    {
+      "track": { "sequence": 6, "release": 72, "block": 2 },
+      "description": "A: Circle Run. RA - clockwise",
+      "count": 64,
+      "reps": 1,
+      "gear": 2,
+      "start_time": 24
+    },
+    {
+      "track": { "sequence": 6, "release": 72, "block": 2 },
+      "description": "B",
+      "moves": [
+        {"description": "Rhythm Run OTS. RA", "count": 1},
+        {"description": "Run, Run, Hop L,R. RA", "count": 8}
+      ],
+      "reps": 4,
+      "gear": 1,
+      "start_time": 47
+    },
+    {
+      "track": { "sequence": 6, "release": 72, "block": 2 },
+      "description": "Rhythm Run Combo\nC",
+      "moves": [
+        {"description": "Jog In. Double Arm Reach Up x8", "count": 16},
+        {"description": "Rhythm Run B. RA", "count": 16}
+      ],
+      "reps": 2,
+      "gear": 2,
+      "start_time": 100
+    },
+    {
+      "track": { "sequence": 6, "release": 72, "block": 2 },
+      "description": "Sprint STart Combo\nD",
+      "moves": [
+        {"description": "Sprint start", "count": 4},
+        {"description": "Run In. RA", "count": 4},
+        {"description": "Run B. RA", "count": 8}
+      ],
+      "reps": 4,
+      "gear": 2,
+      "start_time": 124
+    },
+    {
+      "track": { "sequence": 6, "release": 72, "block": 3 },
+      "description": "A: Circle Run. RA - clockwise",
+      "count": 64,
+      "reps": 1,
+      "gear": 2,
+      "start_time": 147
+    },
+    {
+      "track": { "sequence": 6, "release": 72, "block": 3 },
+      "description": "B",
+      "moves": [
+        {"description": "Rhythm Run OTS. RA", "count": 1},
+        {"description": "Run, Run, Hop L,R. RA", "count": 8}
+      ],
+      "reps": 4,
+      "gear": 1,
+      "start_time": 210
+    },
+    {
+      "track": { "sequence": 6, "release": 72, "block": 3 },
+      "description": "Rhythm Run Combo\nC",
+      "moves": [
+        {"description": "Jog In. Double Arm Reach Up x8", "count": 16},
+        {"description": "Rhythm Run B. RA", "count": 16}
+      ],
+      "reps": 2,
+      "gear": 2,
+      "start_time": 223
+    },
+    {
+      "track": { "sequence": 6, "release": 72, "block": 3 },
+      "description": "Sprint STart Combo\nD",
+      "moves": [
+        {"description": "Sprint start", "count": 4},
+        {"description": "Run In. RA", "count": 4},
+        {"description": "Run B. RA", "count": 8}
+      ],
+      "reps": 4,
+      "gear": 2,
+      "start_time": 247
+    },
+    {
+      "track": { "sequence": 6, "release": 72, "block": 4 },
+      "description": "A: Circle Run RA - anticlockwise",
+      "count": 64,
+      "reps": 1,
+      "gear": 2,
+      "start_time": 309
+    },
+    {
+      "track": { "sequence": 6, "release": 72, "block": 4 },
+      "description": "Jog OTS. RA",
+      "count": 4,
+      "reps": 1,
+      "gear": 2,
+      "start_time": 332
+    },
+    {
+      "track": { "sequence": 6, "release": 72, "block": 4 },
+      "description": "B: [Repeat icon] Rhythm Run OTS. RA.",
+      "count": 32,
+      "reps": 1,
+      "gear": 2,
+      "start_time": 333
+    },
+    {
+      "track": { "sequence": 6, "release": 72, "block": 4 },
+      "description": "C: [Repeat icon] Rhythm Run Combo",
+      "count": 32,
+      "reps": 1,
+      "gear": 2,
+      "start_time": 345
+    },
+    {
+      "track": { "sequence": 6, "release": 72, "block": 4 },
+      "description": "C:",
+      /* TODO: How should this work with first part 1.5 reps, second 1 reps? */
+      "moves": [
+        {"description": "[Repeat icon] Rhythm Run Combo", "count": 48},
+        {"description": "High Knee Run OTS. RA (Stay in)", "count": 16}
+      ],
+      "reps": 1,
+      "gear": 2,
+      "start_time": 357
+    },
+
+    {
+      "track": { "sequence": 7, "release": 72, "block": 1 },
+      "description": "",
+      "moves": [
+        {"description": "Split room", "count": 32},
+        {"description": "Bounce OTS. Relaxed Arms", "count": 2}
+      ],
+      "reps": 16,
+      "gear": 1,
+      "start_time": 1
+    },
+    {
+      "track": { "sequence": 7, "release": 72, "block": 2 },
+      "description": "A",
+      "moves": [
+        {"description": "2-Side Step L. Relaxed Running Arms", "count": 4},
+        {"description": "Double Jump F&B. Double Arm Punch F", "count": 4},
+        {"description": "Repeat R", "count": 8}
+      ],
+      "reps": 4,
+      "gear": 1,
+      "start_time": 26
+    },
+    {
+      "track": { "sequence": 7, "release": 72, "block": 2 },
+      "description": "B: Slow Snowboard Jump L,R",
+      "count": 8,
+      "reps": 4,
+      "gear": 1,
+      "start_time": 50
+    },
+    {
+      "track": { "sequence": 7, "release": 72, "block": 2 },
+      "description": "C:",
+      /* TODO: How should this work with first part 7 reps, second 1 reps? */
+      "moves": [
+        {"description": "Fast Snowboard Jump L, R", "count": 4 },
+        {"description": "Jog OTS last 4 cts", "count": 1}
+      ],
+      "reps": 7,
+      "gear": 1,
+      "start_time": 101
+    },
+    {
+      "track": { "sequence": 7, "release": 72, "block": 2 },
+      "description": "D:",
+      "moves": [
+        {"description": "Run In. Double Arm Punch F x4", "count": 8 },
+        {"description": "Agility Ski Jump L, R x4. Ski Pole Arms", "count": 8 },
+        {"description": "Repeat B", "count": 16}
+      ],
+      "reps": 2,
+      "gear": 1,
+      "start_time": 113
+    },
+    {
+      "track": { "sequence": 7, "release": 72, "block": 3 },
+      "description": "Change sides",
+      "count": 32
+      "reps": 1,
+      "gear": 1,
+      "start_time": 137
+    },
+    {
+      "track": { "sequence": 7, "release": 72, "block": 4 },
+      "description": "A",
+      "moves": [
+        {"description": "2-Side Step L. Relaxed Running Arms", "count": 4},
+        {"description": "Double Jump F&B. Double Arm Punch F", "count": 4},
+        {"description": "Repeat R", "count": 8}
+      ],
+      "reps": 4,
+      "gear": 2,
+      "start_time": 149
+    },
+    {
+      "track": { "sequence": 7, "release": 72, "block": 4 },
+      "description": "B: Slow Snowboard Jump L,R",
+      "count": 8,
+      "reps": 4,
+      "gear": 2,
+      "start_time": 213
+    },
+    {
+      "track": { "sequence": 7, "release": 72, "block": 4 },
+      "description": "C:",
+      /* TODO: How should this work with first part 7 reps, second 1 reps? */
+      "moves": [
+        {"description": "Fast Snowboard Jump L, R", "count": 4 },
+        {"description": "Jog OTS last 4 cts", "count": 1}
+      ],
+      "reps": 7,
+      "gear": 2,
+      "start_time": 224
+    },
+    {
+      "track": { "sequence": 7, "release": 72, "block": 4 },
+      "description": "D:",
+      "moves": [
+        {"description": "Run In. Double Arm Punch F x4", "count": 8 },
+        {"description": "Agility Ski Jump L, R x4. Ski Pole Arms", "count": 8 },
+        {"description": "Repeat B", "count": 16}
+      ],
+      "reps": 2,
+      "gear": 2,
+      "start_time": 236
+    },
+    {
+      "track": { "sequence": 7, "release": 72, "block": 5 },
+      "description": "Change sides",
+      "count": 32
+      "reps": 1,
+      "gear": 1,
+      "start_time": 300
+    },
+    {
+      "track": { "sequence": 7, "release": 72, "block": 5 },
+      "description": "A1:",
+      "moves": [
+        {"description": "4x Side Run L. Relaxed Running Arms", "count": 4},
+        {"description": "Double Jump F&B to corner. Double Arm", "count": 1},
+        {"description": "Punch F", "count": 4},
+        {"description": "Repeat R", "count": 8}
+      ],
+      "reps": 4,
+      "gear": 1,
+      "start_time": 312
+    },
+    {
+      "track": { "sequence": 7, "release": 72, "block": 6 },
+      "description": "B: Slow Snowboard Jump L,R",
+      "count": 8,
+      "reps": 4,
+      "gear": 3,
+      "start_time": 326
+    },
+    {
+      "track": { "sequence": 7, "release": 72, "block": 6 },
+      "description": "C:",
+      /* TODO: How should this work with first part 7 reps, second 1 reps? */
+      "moves": [
+        {"description": "Fast Snowboard Jump L, R", "count": 4 },
+        {"description": "Jog OTS last 4 cts", "count": 1}
+      ],
+      "reps": 7,
+      "gear": 3,
+      "start_time": 337
+    },
+    {
+      "track": { "sequence": 7, "release": 72, "block": 6 },
+      "description": "D:",
+      "moves": [
+        {"description": "Run In. Double Arm Punch F x4", "count": 8 },
+        {"description": "Agility Ski Jump L, R x4. Ski Pole Arms", "count": 8 },
+        {"description": "Repeat B", "count": 16}
+      ],
+      "reps": 2,
+      "gear": 3,
+      "start_time": 349
+    },
+
+    {
+      "track": { "sequence": 8, "release": 72, "block": 1 },
+      "description": "",
+      "moves": [
+        {"description": "Run OTS. RA", "count": 32 },
+        {"description": "Run OTS. Open Clap", "count": 32}
+      ],
+      "reps": 1,
+      "gear": 1,
+      "start_time": 0
+    },
+    {
+      "track": { "sequence": 8, "release": 72, "block": 2 },
+      "description": "Jog OTS. RA",
+      "count": 8
+      "reps": 1,
+      "gear": 1,
+      "start_time": 24
+    },
+    {
+      "track": { "sequence": 8, "release": 72, "block": 2 },
+      "description": "Jog With Arm Pattern\nA:",
+      "moves": [
+        {"description": "Jog OTS. RA", "count": 8},
+        {"description": "Jog OTS - Arm Pattern: Arms Out", "count": 2},
+        {"description": "Jog OTS - Arm Pattern: Arms Up", "count": 2},
+        {"description": "Jog OTS - Arm Pattern: Arms Out", "count": 2},
+        {"description": "Jog OTS - Arm Pattern: Arms Down", "count": 2}
+      ],
+      "reps": 4,
+      "gear": 1,
+      "start_time": 27
+    },
+    {
+      "track": { "sequence": 8, "release": 72, "block": 2 },
+      "description": "B: Jog B. RA",
+      "count": 8
+      "reps": 1,
+      "gear": 1,
+      "start_time": 51
+    },
+    {
+      "track": { "sequence": 8, "release": 72, "block": 2 },
+      "description": "Run & Side Flick Combo\nC:",
+      "moves": [
+        {"description": "Run F. Double Arm Punch F x4", "count": 8},
+        {"description": "Single Side Flick L,R x2. Straight Arm Side raise", "count": 8},
+        {"description": "Run B. Double Arm Punch F x4", "count": 8},
+        {"description": "Single Side Flick L, R x2. Straight Arm Side Raise", "count": 8}
+      ],
+      "reps": 2,
+      "gear": 2,
+      "start_time": 53
+    },
+    {
+      "track": { "sequence": 8, "release": 72, "block": 2 },
+      "description": "Run & Kick Combo\nD:",
+      "moves": [
+        {"description": "Run F. Double Arm Reach Up x4", "count": 8},
+        {"description": "Single Kick L, R x2. Single Arm Punch F", "count": 8},
+        {"description": "uRn B. Double Arm Reach Up x4", "count": 8},
+        {"description": "Single Kick L, R x2. Single Arm Punch F", "count": 8}
+      ],
+      "reps": 2,
+      "gear": 3,
+      "start_time": 117
+    },
+    {
+      "track": { "sequence": 8, "release": 72, "block": 2 },
+      "description": "E: Knee Pulldown L, R. Double Arm Pull Down",
+      "count": 4,
+      "reps": 8,
+      "gear": 3,
+      "start_time": 141
+    },
+    {
+      "track": { "sequence": 8, "release": 72, "block": 3 },
+      "description": "A1:",
+      "moves": [
+        {"description": "Single Side Flick L, R. HOH", "count": 8},
+        {"description": "Single Side Flick L, R x2. Arm Pattern", "count": 8}
+      ],
+      "reps": 4,
+      "gear": 3,
+      "start_time": 153
+    },
+    {
+      "track": { "sequence": 8, "release": 72, "block": 4 },
+      "description": "B: Jog B. RA",
+      "count": 8
+      "reps": 1,
+      "gear": 1,
+      "start_time": 216
+    },
+    {
+      "track": { "sequence": 8, "release": 72, "block": 4 },
+      "description": "Run & Side Flick Combo\nC:",
+      "moves": [
+        {"description": "Run F. Double Arm Punch F x4", "count": 8},
+        {"description": "Single Side Flick L,R x2. Straight Arm Side raise", "count": 8},
+        {"description": "Run B. Double Arm Punch F x4", "count": 8},
+        {"description": "Single Side Flick L, R x2. Straight Arm Side Raise", "count": 8}
+      ],
+      "reps": 2,
+      "gear": 2,
+      "start_time": 218
+    },
+    {
+      "track": { "sequence": 8, "release": 72, "block": 4 },
+      "description": "Run & Kick Combo\nD:",
+      "moves": [
+        {"description": "Run F. Double Arm Reach Up x4", "count": 8},
+        {"description": "Single Kick L, R x2. Single Arm Punch F", "count": 8},
+        {"description": "uRn B. Double Arm Reach Up x4", "count": 8},
+        {"description": "Single Kick L, R x2. Single Arm Punch F", "count": 8}
+      ],
+      "reps": 2,
+      "gear": 3,
+      "start_time": 242
+    },
+    {
+      "track": { "sequence": 8, "release": 72, "block": 4 },
+      "description": "E: Knee Pulldown L, R. Double Arm Pull Down",
+      "count": 4,
+      "reps": 8,
+      "gear": 3,
+      "start_time": 306
+    },
+    {
+      "track": { "sequence": 8, "release": 72, "block": 3 },
+      "description": "A1:",
+      "moves": [
+        {"description": "Single Side Flick L, R. HOH", "count": 8},
+        {"description": "Single Side Flick L, R x2. Arm Pattern", "count": 8}
+      ],
+      "reps": 4,
+      "gear": 3,
+      "start_time": 319
+    },
+    {
+      "track": { "sequence": 8, "release": 72, "block": 5 },
+      "description": "B: Jog B. RA",
+      "count": 8
+      "reps": 1,
+      "gear": 1,
+      "start_time": 342
+    },
+    {
+      "track": { "sequence": 8, "release": 72, "block": 5 },
+      "description": "Run & Side Flick Combo\nC:",
+      "moves": [
+        {"description": "Run F. Double Arm Punch F x4", "count": 8},
+        {"description": "Single Side Flick L,R x2. Straight Arm Side raise", "count": 8},
+        {"description": "Run B. Double Arm Punch F x4", "count": 8},
+        {"description": "Single Side Flick L, R x2. Straight Arm Side Raise", "count": 8}
+      ],
+      "reps": 2,
+      "gear": 2,
+      "start_time": 344
+    },
+    {
+      "track": { "sequence": 8, "release": 72, "block": 5 },
+      "description": "Run & Kick Combo\nD:",
+      "moves": [
+        {"description": "Run F. Double Arm Reach Up x4", "count": 8},
+        {"description": "Single Kick L, R x2. Single Arm Punch F", "count": 8},
+        {"description": "uRn B. Double Arm Reach Up x4", "count": 8},
+        {"description": "Single Kick L, R x2. Single Arm Punch F", "count": 8}
+      ],
+      "reps": 2,
+      "gear": 3,
+      "start_time": 408
+    },
+    {
+      "track": { "sequence": 8, "release": 72, "block": 5 },
+      "description": "E: Knee Pulldown L, R. Double Arm Pull Down",
+      "count": 4,
+      "reps": 8,
+      "gear": 3,
+      "start_time": 432
+    },
+    {
+      "track": { "sequence": 8, "release": 72, "block": 5 },
+      "description": "F: Single Kick L, R. Single Arm Punch F",
+      "count": 4,
+      "reps": 8,
+      "gear": 3,
+      "start_time": 446
+    },
+
+    {
+      "track": { "sequence": 9, "release": 72, "block": 1 },
+      "description": "Run OTS. RA",
+      "count": 32,
+      "reps": 1,
+      "gear": 1,
+      "start_time": 0
+    },
+    {
+      "track": { "sequence": 9, "release": 72, "block": 2 },
+      "description": "A: Heel Jack L, R. Swing Arms Under",
+      "count": 4,
+      "reps": 8,
+      "gear": 1,
+      "start_time": 12
+    },
+    {
+      "track": { "sequence": 9, "release": 72, "block": 2 },
+      "description": "Knee & Shuffle Combo\nB:",
+      "moves": [
+        {"description": "4x Knee L. Single Arm Bicep Curl", "count": 8},
+        {"description": "Shuffle OTS. RA", "count": 8},
+        {"description": "Repeat R", "count": 16}
+      ],
+      "reps": 1,
+      "gear": 1,
+      "start_time": 24
+    },
+    {
+      "track": { "sequence": 9, "release": 72, "block": 2 },
+      "description": "B1:",
+      "moves": [
+        {"description": "2x Knee L. Single Arm Punch F x2", "count": 4},
+        {"description": "2x Knee L. Single Arm Punch Up x2", "count": 4},
+        {"description": "Shuffle OTS. RA", "count": 8},
+        {"description": "Repeat R", "count": 16}
+      ],
+      "reps": 2,
+      "gear": 2,
+      "start_time": 36
+    },
+    {
+      "track": { "sequence": 9, "release": 72, "block": 2 },
+      "description": "C: Drop Squat. Hands to thighs",
+      "count": 4,
+      "reps": 8,
+      "gear": 2,
+      "start_time": 56
+    },
+    {
+      "track": { "sequence": 9, "release": 72, "block": 2 },
+      "description": "Jumping Jack with Arm Combo\nD:",
+      "moves": [
+        {"description": "Jumping Jack. Double Arms 45° Down x2", "count": 4},
+        {"description": "Jumping Jack. Double Arms to Side x2", "count": 4},
+        {"description": "Jumping Jack. Double Arms 45° Up x3", "count": 6},
+        {"description": "Air Jack x1", "count": 2}
+      ],
+      "reps": 1,
+      "gear": 3,
+      "start_time": 108
+    },
+    {
+      "track": { "sequence": 9, "release": 72, "block": 2 },
+      "description": "Run & Jumping Jack B Combo\nE:",
+      "moves": [
+        {"description": "Run F. Double Punch F x4", "count": 8},
+        {"description": "High Knee Run OTS. RA", "count": 8},
+        {"description": "Jumping Jack B x8. Double Arm Reach Up\n(last Jumping Jack B only x4)", "count": 16}
+      ],
+      "reps": 2,
+      "gear": 3,
+      "start_time": 113
+    },
+    {
+      "track": { "sequence": 9, "release": 72, "block": 2 },
+      "description": "F: Jumping Jack. Double Arm Reach Up",
+      "count": 2,
+      "reps": 16,
+      "gear": 3,
+      "start_time": 134
+    },
+    {
+      "track": { "sequence": 9, "release": 72, "block": 2 },
+      "description": "G: High Knee Run F. RA",
+      "count": 32,
+      "reps": 1,
+      "gear": 3,
+      "start_time": 146
+    },
+    {
+      "track": { "sequence": 9, "release": 72, "block": 3 },
+      "description": "Jog OTS. RA",
+      "count": 4,
+      "reps": 1,
+      "gear": 1,
+      "start_time": 157
+    },
+    {
+      "track": { "sequence": 9, "release": 72, "block": 3 },
+      "description": "A: Heel Jack L, R. Swing Arms Under",
+      "count": 4,
+      "reps": 8,
+      "gear": 1,
+      "start_time": 158
+    },
+    {
+      "track": { "sequence": 9, "release": 72, "block": 3 },
+      "description": "Knee & Shuffle Combo\nB:",
+      "moves": [
+        {"description": "4x Knee L. Single Arm Bicep Curl", "count": 8},
+        {"description": "Shuffle OTS. RA", "count": 8},
+        {"description": "Repeat R", "count": 16}
+      ],
+      "reps": 1,
+      "gear": 1,
+      "start_time": 210
+    },
+    {
+      "track": { "sequence": 9, "release": 72, "block": 3 },
+      "description": "B1:",
+      "moves": [
+        {"description": "2x Knee L. Single Arm Punch F x2", "count": 4},
+        {"description": "2x Knee L. Single Arm Punch Up x2", "count": 4},
+        {"description": "Shuffle OTS. RA", "count": 8},
+        {"description": "Repeat R", "count": 16}
+      ],
+      "reps": 2,
+      "gear": 2,
+      "start_time": 222
+    },
+    {
+      "track": { "sequence": 9, "release": 72, "block": 3 },
+      "description": "C: Drop Squat. Hands to thighs",
+      "count": 4,
+      "reps": 8,
+      "gear": 2,
+      "start_time": 242
+    },
+    {
+      "track": { "sequence": 9, "release": 72, "block": 3 },
+      "description": "Jumping Jack with Arm Combo\nD:",
+      "moves": [
+        {"description": "Jumping Jack. Double Arms 45° Down x2", "count": 4},
+        {"description": "Jumping Jack. Double Arms to Side x2", "count": 4},
+        {"description": "Jumping Jack. Double Arms 45° Up x3", "count": 6},
+        {"description": "Air Jack x1", "count": 2}
+      ],
+      "reps": 1,
+      "gear": 3,
+      "start_time": 254
+    },
+    {
+      "track": { "sequence": 9, "release": 72, "block": 3 },
+      "description": "Run & Jumping Jack B Combo\nE:",
+      "moves": [
+        {"description": "Run F. Double Punch F x4", "count": 8},
+        {"description": "High Knee Run OTS. RA", "count": 8},
+        {"description": "Jumping Jack B x8. Double Arm Reach Up\n(last Jumping Jack B only x4)", "count": 16}
+      ],
+      "reps": 2,
+      "gear": 3,
+      "start_time": 259
+    },
+    {
+      "track": { "sequence": 9, "release": 72, "block": 3 },
+      "description": "F: Jumping Jack. Double Arm Reach Up",
+      "count": 2,
+      "reps": 16,
+      "gear": 3,
+      "start_time": 320
+    },
+    {
+      "track": { "sequence": 9, "release": 72, "block": 3 },
+      "description": "G: High Knee Run F. RA",
+      "count": 32,
+      "reps": 1,
+      "gear": 3,
+      "start_time": 332
+    },
+    {
+      "track": { "sequence": 9, "release": 72, "block": 4 },
+      "description": "Jog OTs. Clap Hands O/H",
+      "count": 32,
+      "reps": 1,
+      "gear": 1,
+      "start_time": 345
+    },
+    {
+      "track": { "sequence": 9, "release": 72, "block": 4 },
+      "description": "B1:",
+      "moves": [
+        {"description": "2x Knee L. Single Arm Punch F x2", "count": 4},
+        {"description": "2x Knee L. Single Arm Punch Up x2", "count": 4},
+        {"description": "Shuffle OTS. RA", "count": 8},
+        {"description": "Repeat R", "count": 16}
+      ],
+      "reps": 2,
+      "gear": 2,
+      "start_time": 356
+    },
+    {
+      "track": { "sequence": 9, "release": 72, "block": 4 },
+      "description": "Jumping Jack with Arm Combo\nD:",
+      "moves": [
+        {"description": "Jumping Jack. Double Arms 45° Down x2", "count": 4},
+        {"description": "Jumping Jack. Double Arms to Side x2", "count": 4},
+        {"description": "Jumping Jack. Double Arms 45° Up x3", "count": 6},
+        {"description": "Air Jack x1", "count": 2}
+      ],
+      "reps": 1,
+      "gear": 3,
+      "start_time": 416
+    },
+    {
+      "track": { "sequence": 9, "release": 72, "block": 4 },
+      "description": "Run & Jumping Jack B Combo\nE:",
+      "moves": [
+        {"description": "Run F. Double Punch F x4", "count": 8},
+        {"description": "High Knee Run OTS. RA", "count": 8},
+        {"description": "Jumping Jack B x8. Double Arm Reach Up\n(last Jumping Jack B only x4)", "count": 16}
+      ],
+      "reps": 2,
+      "gear": 3,
+      "start_time": 421
+    },
+    {
+      "track": { "sequence": 9, "release": 72, "block": 4 },
+      "description": "F: Jumping Jack. Double Arm Reach Up",
+      "count": 2,
+      "reps": 16,
+      "gear": 3,
+      "start_time": 442
+    },
+    {
+      "track": { "sequence": 9, "release": 72, "block": 4 },
+      "description": "F: Jumping Jack. Double Arm Reach Up",
+      "count": 2,
+      "reps": 16,
+      "gear": 3,
+      "start_time": 454
+    }
+    {
+      "track": { "sequence": 9, "release": 72, "block": 4 },
+      "description": "G: High Knee Run F. RA",
+      "count": 32,
+      "reps": 1,
+      "gear": 3,
+      "start_time": 506
+    },
+
+    /* TODO: Gear missing for this track? */
+    {
+      "track": { "sequence": 10, "release": 72, "block": 1 },
+      "description": "Get water, towel then come back to join class",
+      "count": 16,
+      "reps": 1,
+      "gear": 0,
+      "start_time": 0
+    },
+    {
+      "track": { "sequence": 10, "release": 72, "block": 1 },
+      "description": "Step Touch L,R. Relaxed Arms",
+      "count": 4,
+      "reps": 8,
+      "gear": 0,
+      "start_time": 7
+    },
+    {
+      "track": { "sequence": 10, "release": 72, "block": 2 },
+      "description": "4/4 Squat Lunge Combo\nA:",
+      "moves": [
+        {"description": "Set up for Squat Lunge Combo. HOH", "count": 16},
+        {"description": "Squat. HOH", "count": 4},
+        {"description": "Lunge L. HOH", "count": 4},
+        {"description": "Squat. HOH", "count": 4},
+        {"description": "Stand Up. HOH", "count": 4},
+      ],
+      "reps": 1,
+      "gear": 0,
+      "start_time": 7
+    },
+    {
+      "track": { "sequence": 10, "release": 72, "block": 2 },
+      "description": "2/2 Squat Lunge Combo\nA1:",
+      "moves": [
+        {"description": "Squat. HOH", "count": 2},
+        {"description": "Lunge L. HOH", "count": 2},
+        {"description": "Squat. HOH", "count": 2},
+        {"description": "Stand Up. HOH", "count": 2},
+      ],
+      "reps": 8,
+      "gear": 0,
+      "start_time": 38
+    },
+    {
+      "track": { "sequence": 10, "release": 72, "block": 2 },
+      "description": "Step Lunge with Side Tap\nB:",
+      "moves": [
+        {"description": "Step Lunge F L. RA with Side Tap L at top", "count": 4},
+      ],
+      "reps": 8,
+      "gear": 0,
+      "start_time": 107
+    },
+    {
+      "track": { "sequence": 10, "release": 72, "block": 2 },
+      "description": "C:",
+      /* TODO: How should this work with A & B, different count & reps */
+      "moves": [
+        {"description": "Bottom Half Squat. Hands cross chest", "count": 2},
+        {"description": "Stand up", "count": 4}
+      ],
+      "reps": 6,
+      "gear": 0,
+      "start_time": 122
+    },
+    {
+      "track": { "sequence": 10, "release": 72, "block": 3 },
+      "description": "2/2 Squat Lunge Combo\nA1:",
+      "moves": [
+        {"description": "Squat. HOH", "count": 2},
+        {"description": "Lunge R. HOH", "count": 2},
+        {"description": "Squat. HOH", "count": 2},
+        {"description": "Stand Up. HOH", "count": 2},
+      ],
+      "reps": 8,
+      "gear": 0,
+      "start_time": 129
+    },
+    {
+      "track": { "sequence": 10, "release": 72, "block": 3 },
+      "description": "Step Lunge with Side Tap\nB:",
+      "moves": [
+        {"description": "Step Lunge F R. RA with Side Tap R at top", "count": 4},
+      ],
+      "reps": 8,
+      "gear": 0,
+      "start_time": 158
+    },
+    {
+      "track": { "sequence": 10, "release": 72, "block": 3 },
+      "description": "C:",
+      /* TODO: How should this work with A & B, different count & reps */
+      "moves": [
+        {"description": "Bottom Half Squat. Hands cross chest", "count": 2},
+        {"description": "Stand up", "count": 4}
+      ],
+      "reps": 6,
+      "gear": 0,
+      "start_time": 215
+    },
+    {
+      "track": { "sequence": 10, "release": 72, "block": 4 },
+      "description": "",
+      /* TODO: Reps for first move different than second */
+      "moves": [
+        {"description": "Step Touch L, R", "count": 4},
+        {"description": "Set up for Squat. Hands cross chest", "count": 8}
+      ],
+      "reps": 6,
+      "gear": 0,
+      "start_time": 222
+    },
+    {
+      "track": { "sequence": 10, "release": 72, "block": 4 },
+      "description": "C1: Hold Bottom Half Squat. Hands cross chest.",
+      "count": 32,
+      "reps": 1,
+      "gear": 0,
+      "start_time": 237
+    },
+    {
+      "track": { "sequence": 10, "release": 72, "block": 4 },
+      "description": "D: Alternate Step Lunge L, R. RA",
+      "count": 8,
+      "reps": 8,
+      "gear": 0,
+      "start_time": 252
+    },
+    {
+      "track": { "sequence": 10, "release": 72, "block": 4 },
+      "description": "C2: Bottom Half Squat. Hands cross chest",
+      "count": 2,
+      "reps": 16,
+      "gear": 0,
+      "start_time": 322
+    },
+
+    {
+      "track": { "sequence": 11, "release": 72, "block": 1 },
+      "description": "Transition to floor",
+      "count": 40,
+      "reps": 1,
+      "gear": 0,
+      "start_time": 0
+    },
+    {
+      "track": { "sequence": 11, "release": 72, "block": 2 },
+      "description": "A: Single Leg Scoop L, R",
+      "count": 16,
+      "reps": 3.5,
+      "gear": 0,
+      "start_time": 18
+    },
+    {
+      "track": { "sequence": 11, "release": 72, "block": 2 },
+      "description": "A: Single Leg Scoop L, R",
+      "count": 16,
+      "reps": 2,
+      "gear": 0,
+      "start_time": 44
+    },
+    {
+      "track": { "sequence": 11, "release": 72, "block": 2 },
+      "description": "A1: Double Leg Scoop",
+      "count": 8,
+      "reps": 5,
+      "gear": 0,
+      "start_time": 103
+    },
+    {
+      "track": { "sequence": 11, "release": 72, "block": 2 },
+      "description": "B:",
+      "moves": [
+        {"description": "Roll over to Side Hover. L arm to ceiling", "count": 32},
+        {"description": "Last 8 cts - L leg lifts", "count": 8},
+      ],
+      "reps": 1,
+      "gear": 0,
+      "start_time": 121
+    },
+    {
+      "track": { "sequence": 11, "release": 72, "block": 2 },
+      "description": "C:",
+      "moves": [
+        {"description": "C: Side Hover Crunch L", "count": 8}
+      ],
+      "reps": 8,
+      "gear": 0,
+      "start_time": 140
+    },
+    {
+      "track": { "sequence": 11, "release": 72, "block": 3 },
+      "description": "",
+      "moves": [
+        {"description": "Hold Side Hover L", "count": 8},
+        {"description": "Transition to other side", "count": 8},
+        {"description": "Single Leg Scoop L&R", "count": 24}
+      ],
+      "reps": 1.5,
+      "gear": 0,
+      "start_time": 155
+    },
+    {
+      "track": { "sequence": 11, "release": 72, "block": 3 },
+      "description": "A1:",
+      "moves": [
+        {"description": "Double Leg Scoop", "count": 8}
+      ],
+      "reps": 5,
+      "gear": 0,
+      "start_time": 213
+    },
+    {
+      "track": { "sequence": 11, "release": 72, "block": 3 },
+      "description": "",
+      "moves": [
+        {"description": "Roll over to Side Hover. R arm to ceiling", "count": 32},
+        {"description": "Last 8 cts - R leg lifts", "count": 8}
+      ],
+      "reps": 1,
+      "gear": 0,
+      "start_time": 232
+    },
+    {
+      "track": { "sequence": 11, "release": 72, "block": 3 },
+      "description": "C:",
+      "moves": [
+        {"description": "[Repeat icon] Side Hover Crunch", "count": 4}
+      ],
+      "reps": 8,
+      "gear": 0,
+      "start_time": 250
+    },
+    {
+      "track": { "sequence": 11, "release": 72, "block": 3 },
+      "description": "",
+      "moves": [
+        {"description": "Hold Side Hover R", "count": 8},
+        {"description": "Transition to floor to set up Crunch", "count": 8}
+      ],
+      "reps": 1,
+      "gear": 0,
+      "start_time": 305
+    },
+    {
+      "track": { "sequence": 11, "release": 72, "block": 4 },
+      "description": "3-Pulse Crunch Combo - Feet Down\nD:",
+      "moves": [
+        {"description": "3-Pulse Crunch. Hands behind Head", "count": 6},
+        {"description": "Lower", "count": 2}
+      ],
+      "reps": 3,
+      "gear": 0,
+      "start_time": 312
+    },
+    {
+      "track": { "sequence": 11, "release": 72, "block": 4 },
+      "description": "3-Pulse Crunch Combo with Arm Reach\nD1:",
+      "moves": [
+        {"description": "3-Pulse Crunch Up. Hands behind Head", "count": 6},
+        {"description": "Reach to ankles last 2 cts - Lower", "count": 2}
+      ],
+      "reps": 8,
+      "gear": 0,
+      "start_time": 323
+    },
+    {
+      "track": { "sequence": 11, "release": 72, "block": 4 },
+      "description": "",
+      "moves": [
+        {"description": "Single Crunch. Hands behind head - feet up or down", "count": 4}
+      ],
+      "reps": 16,
+      "gear": 0,
+      "start_time": 400
+    }
+
+    {
+      "track": { "sequence": 12, "release": 72, "block": 1 },
+      "description": "",
+      "moves": [
+        {"description": "Roll on to back - Relax stretch", "count": 16}
+      ],
+      "reps": 1,
+      "gear": 0,
+      "start_time": 0
+    },
+    {
+      "track": { "sequence": 12, "release": 72, "block": 1 },
+      "description": "",
+      "moves": [
+        {"description": "Lying Hamstring Stretch L", "count": 32}
+      ],
+      "reps": 1,
+      "gear": 0,
+      "start_time": 11
+    },
+    {
+      "track": { "sequence": 12, "release": 72, "block": 1 },
+      "description": "",
+      "moves": [
+        {"description": "Transition to Gluteal Stretch. L ankle to R knee", "count": 16}
+      ],
+      "reps": 1,
+      "gear": 0,
+      "start_time": 29
+    },
+    {
+      "track": { "sequence": 12, "release": 72, "block": 1 },
+      "description": "",
+      "moves": [
+        {"description": "Lying Gluteal Stretch L", "count": 32}
+      ],
+      "reps": 1,
+      "gear": 0,
+      "start_time": 38
+    },
+    {
+      "track": { "sequence": 12, "release": 72, "block": 1 },
+      "description": "",
+      "moves": [
+        {"description": "Lower Back Release - knees to front (deepen stretch in last 16 cts)", "count": 32}
+      ],
+      "reps": 1,
+      "gear": 0,
+      "start_time": 57
+    },
+    {
+      "track": { "sequence": 12, "release": 72, "block": 1 },
+      "description": "",
+      "moves": [
+        {"description": "Change to other side", "count": 4}
+      ],
+      "reps": 1,
+      "gear": 0,
+      "start_time": 115
+    },
+    {
+      "track": { "sequence": 12, "release": 72, "block": 1 },
+      "description": "",
+      "moves": [
+        {"description": "Lying Hamstring Stretch R", "count": 32}
+      ],
+      "reps": 1,
+      "gear": 0,
+      "start_time": 117
+    },
+    {
+      "track": { "sequence": 12, "release": 72, "block": 1 },
+      "description": "",
+      "moves": [
+        {"description": "Transition to Gluteal Stretch, R ankle to L knee", "count": 16}
+      ],
+      "reps": 1,
+      "gear": 0,
+      "start_time": 136
+    },
+    {
+      "track": { "sequence": 12, "release": 72, "block": 1 },
+      "description": "",
+      "moves": [
+        {"description": "Lying Gluteal Stretch R", "count": 32}
+      ],
+      "reps": 1,
+      "gear": 0,
+      "start_time": 145
+    },
+    {
+      "track": { "sequence": 12, "release": 72, "block": 1 },
+      "description": "",
+      "moves": [
+        {"description": "Lower Back Release - knees to back\nRoll over last 4 cts", "count": 32}
+      ],
+      "reps": 1,
+      "gear": 0,
+      "start_time": 203
+    },
+    {
+      "track": { "sequence": 12, "release": 72, "block": 1 },
+      "description": "",
+      "moves": [
+        {"description": "Kneeling Hip Flexor Stretch R. Arms relaxed by side", "count": 16},
+        {"description": "Kneeling Hip Flexor & Shoulder Stretch R", "count": 16}
+      ],
+      "reps": 1,
+      "gear": 0,
+      "start_time": 221
+    },
+    {
+      "track": { "sequence": 12, "release": 72, "block": 1 },
+      "description": "",
+      "moves": [
+        {"description": "Kneeling Hip Flexor Stretch L. Arms relaxed by side", "count": 16},
+        {"description": "Kneeling Hip Flexor & Shoulder Stretch L", "count": 16}
+      ],
+      "reps": 1,
+      "gear": 0,
+      "start_time": 240
+    },
+    {
+      "track": { "sequence": 12, "release": 72, "block": 1 },
+      "description": "",
+      "moves": [
+        {"description": "Standing Calf Stretch L", "count": 8},
+        {"description": "Standing Calf & Tricep Stretch L", "count": 24}
+      ],
+      "reps": 1,
+      "gear": 0,
+      "start_time": 258
+    },
+    {
+      "track": { "sequence": 12, "release": 72, "block": 1 },
+      "description": "",
+      "moves": [
+        {"description": "Standing Calf Stretch R", "count": 8},
+        {"description": "Standing Calf & Tricep Stretch R", "count": 24}
+      ],
+      "reps": 1,
+      "gear": 0,
+      "start_time": 318
+    },
+    {
+      "track": { "sequence": 12, "release": 72, "block": 1 },
+      "description": "",
+      "moves": [
+        {"description": "Standing Quadricep Stretch R. L arm out to side", "count": 16},
+        {"description": "Standing Quadricep Stretch L. R arm out to side", "count": 16}
+      ],
+      "reps": 1,
+      "gear": 0,
+      "start_time": 334
+    },
+    {
+      "track": { "sequence": 12, "release": 72, "block": 1 },
+      "description": "",
+      "moves": [
+        {"description": "Iliotibial Band Stretch L", "count": 16},
+        {"description": "Iliotibial Band Stretch R", "count": 16}
+      ],
+      "reps": 1,
+      "gear": 0,
+      "start_time": 353
     }
   ],
   "targets": [

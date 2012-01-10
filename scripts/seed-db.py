@@ -8,8 +8,8 @@ init = os.path.join(os.path.dirname(__file__), '..', 'db_init.sql')
 commas = ', '.join
 
 
-def int_seq():
-    n = 0
+def int_seq(start=0):
+    n = start
     while True:
         yield n
         n += 1
@@ -64,7 +64,7 @@ def add_exercise(exercise, cur):
     seq = int_seq()
     for move in moves:
         move['exercise_id'] = exercise_id
-        move['sequence'] = seq.next()
+        move['sequence'] = next(seq)
         cur.execute(insert_into('moves', move_fields),
             [move[field] for field in move_fields])
 
