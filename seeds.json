@@ -165,7 +165,7 @@
     },
     {
       "track": { "sequence": 4, "release": 72 },
-      "sequence": 4,
+      "sequence": 3,
       "description": "Repeat sequences above (A to B2)"
     },
     {
@@ -185,7 +185,7 @@
     },
     {
       "track": { "sequence": 5, "release": 72 },
-      "sequence": 4,
+      "sequence": 3,
       "description": "Repeat sequences above (A to B2)"
     },
     {
@@ -1394,7 +1394,7 @@
     {
       "track": { "sequence": 7, "release": 72, "block": 3 },
       "description": "Change sides",
-      "count": 32
+      "count": 32,
       "reps": 1,
       "gear": 1,
       "start_time": 137
@@ -1446,7 +1446,7 @@
     {
       "track": { "sequence": 7, "release": 72, "block": 5 },
       "description": "Change sides",
-      "count": 32
+      "count": 32,
       "reps": 1,
       "gear": 1,
       "start_time": 300
@@ -1511,7 +1511,7 @@
     {
       "track": { "sequence": 8, "release": 72, "block": 2 },
       "description": "Jog OTS. RA",
-      "count": 8
+      "count": 8,
       "reps": 1,
       "gear": 1,
       "start_time": 24
@@ -1533,7 +1533,7 @@
     {
       "track": { "sequence": 8, "release": 72, "block": 2 },
       "description": "B: Jog B. RA",
-      "count": 8
+      "count": 8,
       "reps": 1,
       "gear": 1,
       "start_time": 51
@@ -1586,7 +1586,7 @@
     {
       "track": { "sequence": 8, "release": 72, "block": 4 },
       "description": "B: Jog B. RA",
-      "count": 8
+      "count": 8,
       "reps": 1,
       "gear": 1,
       "start_time": 216
@@ -1639,7 +1639,7 @@
     {
       "track": { "sequence": 8, "release": 72, "block": 5 },
       "description": "B: Jog B. RA",
-      "count": 8
+      "count": 8,
       "reps": 1,
       "gear": 1,
       "start_time": 342
@@ -1928,7 +1928,7 @@
       "reps": 16,
       "gear": 3,
       "start_time": 454
-    }
+    },
     {
       "track": { "sequence": 9, "release": 72, "block": 4 },
       "description": "G: High Knee Run F. RA",
@@ -1963,7 +1963,7 @@
         {"description": "Squat. HOH", "count": 4},
         {"description": "Lunge L. HOH", "count": 4},
         {"description": "Squat. HOH", "count": 4},
-        {"description": "Stand Up. HOH", "count": 4},
+        {"description": "Stand Up. HOH", "count": 4}
       ],
       "reps": 1,
       "gear": 0,
@@ -1976,7 +1976,7 @@
         {"description": "Squat. HOH", "count": 2},
         {"description": "Lunge L. HOH", "count": 2},
         {"description": "Squat. HOH", "count": 2},
-        {"description": "Stand Up. HOH", "count": 2},
+        {"description": "Stand Up. HOH", "count": 2}
       ],
       "reps": 8,
       "gear": 0,
@@ -1986,7 +1986,7 @@
       "track": { "sequence": 10, "release": 72, "block": 2 },
       "description": "Step Lunge with Side Tap\nB:",
       "moves": [
-        {"description": "Step Lunge F L. RA with Side Tap L at top", "count": 4},
+        {"description": "Step Lunge F L. RA with Side Tap L at top", "count": 4}
       ],
       "reps": 8,
       "gear": 0,
@@ -2011,7 +2011,7 @@
         {"description": "Squat. HOH", "count": 2},
         {"description": "Lunge R. HOH", "count": 2},
         {"description": "Squat. HOH", "count": 2},
-        {"description": "Stand Up. HOH", "count": 2},
+        {"description": "Stand Up. HOH", "count": 2}
       ],
       "reps": 8,
       "gear": 0,
@@ -2021,7 +2021,7 @@
       "track": { "sequence": 10, "release": 72, "block": 3 },
       "description": "Step Lunge with Side Tap\nB:",
       "moves": [
-        {"description": "Step Lunge F R. RA with Side Tap R at top", "count": 4},
+        {"description": "Step Lunge F R. RA with Side Tap R at top", "count": 4}
       ],
       "reps": 8,
       "gear": 0,
@@ -2113,7 +2113,7 @@
       "description": "B:",
       "moves": [
         {"description": "Roll over to Side Hover. L arm to ceiling", "count": 32},
-        {"description": "Last 8 cts - L leg lifts", "count": 8},
+        {"description": "Last 8 cts - L leg lifts", "count": 8}
       ],
       "reps": 1,
       "gear": 0,
@@ -2214,7 +2214,7 @@
       "reps": 16,
       "gear": 0,
       "start_time": 400
-    }
+    },
 
     {
       "track": { "sequence": 12, "release": 72, "block": 1 },
