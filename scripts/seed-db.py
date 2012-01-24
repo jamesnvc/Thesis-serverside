@@ -3,8 +3,10 @@ import os
 import json
 import psycopg2
 
-seeds = os.path.join(os.path.dirname(__file__), '..', 'seeds.json')
-init = os.path.join(os.path.dirname(__file__), '..', 'db_init.sql')
+seeds = os.path.abspath(os.path.join(
+    os.path.dirname(__file__), '..', 'seeds.json'))
+init = os.path.abspath(os.path.join(
+    os.path.dirname(__file__), '..', 'db_init.sql'))
 commas = ', '.join
 
 
@@ -92,6 +94,7 @@ def store_data(data_file=seeds):
     conn = psycopg2.connect("dbname=musashi-dev user=tester")
     cur = conn.cursor()
     try:
+        print "Loading seeds file %s" % (data_file, )
         data = json.load(open(data_file))
         for track in data['tracks']:
             add_track(track, cur)
