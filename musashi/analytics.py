@@ -46,6 +46,9 @@ class Analyzer(object):
         fatigue = self.fatigue_analysis(analysis)
         return (analysis, fatigue)
 
+    def recommend(self, tracks):
+        pass
+
     def perform_analysis(self, track_ids):
         # Need to wrap this in a list so we can traverse it multiple times
         tracks = list(self.db.select('tracks', where="id in $ids",
