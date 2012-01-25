@@ -1,7 +1,8 @@
 import collections
 import web
 import os
-import analytics
+from musashi import analytics
+from musashi import api_handler
 
 APP_ROOT = os.path.dirname(__file__)
 
@@ -14,6 +15,7 @@ db = web.database(dbn='postgres', user='tester',
 urls = (
     '/', 'index',
     '/analyze', 'analyze',
+    '/api/(.*)', 'api',
     '/(favicon.ico)', 'static',
     '/s/(.*)', 'static'
 )
@@ -32,6 +34,8 @@ analyze = analytics.Analyzer
 analyze.db = db
 analyze.render = render
 
+api = api_handler.Api
+api.db = db
 
 class static(object):
     content_types = {
@@ -54,3 +58,4 @@ app = web.application(urls, globals())
 
 if __name__ == '__main__':
     app.run()
+

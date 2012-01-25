@@ -46,9 +46,7 @@ class Analyzer(object):
         fatigue = self.fatigue_analysis(analysis)
         return (analysis, fatigue)
 
-    def POST(self):
-        """Service the request."""
-        track_ids = map(int, web.input().tracks.split('-'))
+    def perform_analysis(self, track_ids):
         # Need to wrap this in a list so we can traverse it multiple times
         tracks = list(self.db.select('tracks', where="id in $ids",
                 vars=dict(ids=track_ids)))
@@ -67,6 +65,12 @@ class Analyzer(object):
                         'moves', where="exercise_id = $exercise_id",
                         order='sequence', vars=dict(exercise_id=exercise.id)))
         analysis, fatigue = self.analyze(tracks)
+        return (tracks, analysis, fatigue)
+
+    def POST(self):
+        """Service the request."""
+        track_ids = map(int, web.input().tracks.split('-'))
+        tracks, analysis, fatigue =  self.perform_analysis(track_ids)
         track_info = self.render.workout_tracks(tracks, analysis, fatigue, self.render)
         web.header('Content-type', 'text/html')
         return track_info
