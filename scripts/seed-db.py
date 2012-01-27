@@ -10,15 +10,16 @@ init = os.path.abspath(os.path.join(
     os.path.dirname(__file__), '..', 'db_init.sql'))
 commas = ', '.join
 
-dsn = "dbname=musashi-dev user=tester"
-if 'HEROKU_SHARED_POSTGRESQL_AQUA_URL' in os.environ:
-    db_url = urlparse.urlparse('HEROKU_SHARED_POSTGRESQL_AQUA_URL')
-    params = {'dbname': db_url.path[1:],
-            'user': db_url.username,
-            'password': db_url.password,
-            'host': db_url.hostname,
-            'port': db_url.port}
-    dsn = " ".join("{0}={1}".format(k, v) for k, v in params.items())
+db_params = {'database': 'musashi-dev', 'user': 'tester'}
+if 'SHARED_DATABASE_URL' in os.environ:
+    db_url = urlparse.urlparse('SHARED_DATABASE_URL')
+    db_params = {
+                'database': db_url.path[1:],
+                'user': db_url.username,
+                'password': db_url.password,
+                'host': db_url.hostname,
+                'port': db_url.port
+            }
 
 def int_seq(start=0):
     n = start
@@ -101,7 +102,7 @@ def add_move_target(move_target, cur):
 
 
 def store_data(data_file=seeds):
-    conn = psycopg2.connect(dsn)
+    conn = psycopg2.connect(**db_params)
     cur = conn.cursor()
     try:
         print "Loading seeds file %s" % (data_file, )
@@ -126,7 +127,7 @@ def store_data(data_file=seeds):
 
 
 def init_tables():
-    conn = psycopg2.connect(dsn)
+    conn = psycopg2.connect(**db_params)
     cur = conn.cursor()
     try:
         cur.execute("DROP TABLE IF EXISTS {0};".format(
