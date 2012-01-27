@@ -10,8 +10,8 @@ render = web.template.render(
         os.path.join(APP_ROOT, 'templates'))
 
 db = None
-if 'SHARED_DATABASE_URL' in os.environ:
-    db = web.database(os.environ['SHARED_DATABASE_URL'])
+if 'HEROKU_SHARED_POSTGRESQL_AQUA_URL' in os.environ:
+    db = web.database(os.environ['HEROKU_SHARED_POSTGRESQL_AQUA_URL'])
 else:
     db = web.database(dbn='postgres', user='tester',
             pw='testing', db='musashi-dev')

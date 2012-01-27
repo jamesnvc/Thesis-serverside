@@ -11,8 +11,8 @@ init = os.path.abspath(os.path.join(
 commas = ', '.join
 
 dsn = "dbname=musashi-dev user=tester"
-if 'SHARED_DATABASE_URL' in os.environ:
-    db_url = urlparse.urlparse('SHARED_DATABASE_URL')
+if 'HEROKU_SHARED_POSTGRESQL_AQUA_URL' in os.environ:
+    db_url = urlparse.urlparse('HEROKU_SHARED_POSTGRESQL_AQUA_URL')
     params = {'dbname': db_url.path[1:],
             'user': db_url.username,
             'password': db_url.password,
