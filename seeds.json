@@ -556,7 +556,6 @@
       "gear": 2,
       "start_time": 12
     },
-    /* TODO: How should this work with A & B, different count & reps */
     {
       "track": { "sequence": 2, "release": 72, "block": 2 },
       "description": "",
@@ -584,7 +583,6 @@
       "gear": 2,
       "start_time": 102
     },
-    /* TODO: How should this work with A & B, different count & reps */
     {
       "track": { "sequence": 2, "release": 72, "block": 3 },
       "description": "",
@@ -612,7 +610,6 @@
       "gear": 2,
       "start_time": 235
     },
-    /* TODO: How should this work with A & B, different count & reps */
     {
       "track": { "sequence": 2, "release": 72, "block": 4 },
       "description": "",
@@ -1064,7 +1061,6 @@
       "start_time": 434
     },
 
-    /* TODO: Gear missing for this track? */
     {
       "track": { "sequence": 5, "release": 72, "block": 1 },
       "description": "",
@@ -1326,7 +1322,6 @@
     {
       "track": { "sequence": 6, "release": 72, "block": 4 },
       "description": "C:",
-      /* TODO: How should this work with first part 1.5 reps, second 1 reps? */
       "moves": [
         {"description": "[Repeat icon] Rhythm Run Combo", "count": 48},
         {"description": "High Knee Run OTS. RA (Stay in)", "count": 16}
@@ -1370,7 +1365,6 @@
     {
       "track": { "sequence": 7, "release": 72, "block": 2 },
       "description": "C:",
-      /* TODO: How should this work with first part 7 reps, second 1 reps? */
       "moves": [
         {"description": "Fast Snowboard Jump L, R", "count": 4 },
         {"description": "Jog OTS last 4 cts", "count": 1}
@@ -1422,7 +1416,6 @@
     {
       "track": { "sequence": 7, "release": 72, "block": 4 },
       "description": "C:",
-      /* TODO: How should this work with first part 7 reps, second 1 reps? */
       "moves": [
         {"description": "Fast Snowboard Jump L, R", "count": 4 },
         {"description": "Jog OTS last 4 cts", "count": 1}
@@ -1475,7 +1468,6 @@
     {
       "track": { "sequence": 7, "release": 72, "block": 6 },
       "description": "C:",
-      /* TODO: How should this work with first part 7 reps, second 1 reps? */
       "moves": [
         {"description": "Fast Snowboard Jump L, R", "count": 4 },
         {"description": "Jog OTS last 4 cts", "count": 1}
@@ -1938,7 +1930,6 @@
       "start_time": 506
     },
 
-    /* TODO: Gear missing for this track? */
     {
       "track": { "sequence": 10, "release": 72, "block": 1 },
       "description": "Get water, towel then come back to join class",
@@ -1995,7 +1986,6 @@
     {
       "track": { "sequence": 10, "release": 72, "block": 2 },
       "description": "C:",
-      /* TODO: How should this work with A & B, different count & reps */
       "moves": [
         {"description": "Bottom Half Squat. Hands cross chest", "count": 2},
         {"description": "Stand up", "count": 4}
@@ -2030,7 +2020,6 @@
     {
       "track": { "sequence": 10, "release": 72, "block": 3 },
       "description": "C:",
-      /* TODO: How should this work with A & B, different count & reps */
       "moves": [
         {"description": "Bottom Half Squat. Hands cross chest", "count": 2},
         {"description": "Stand up", "count": 4}
@@ -2042,7 +2031,6 @@
     {
       "track": { "sequence": 10, "release": 72, "block": 4 },
       "description": "",
-      /* TODO: Reps for first move different than second */
       "moves": [
         {"description": "Step Touch L, R", "count": 4},
         {"description": "Set up for Squat. Hands cross chest", "count": 8}
