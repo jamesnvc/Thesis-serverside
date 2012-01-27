@@ -1,6 +1,6 @@
 import collections
-import web
 import os
+import web
 from musashi import analytics
 from musashi import api_handler
 
@@ -9,8 +9,12 @@ APP_ROOT = os.path.dirname(__file__)
 render = web.template.render(
         os.path.join(APP_ROOT, 'templates'))
 
-db = web.database(dbn='postgres', user='tester',
-        pw='testing', db='musashi-dev')
+db = None
+if 'DATABASE_URL' in os.environ:
+    db_url = web.database(os.environ['DATABASE_URL'])
+else:
+    db = web.database(dbn='postgres', user='tester',
+            pw='testing', db='musashi-dev')
 
 urls = (
     '/', 'index',

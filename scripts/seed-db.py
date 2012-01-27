@@ -9,6 +9,7 @@ init = os.path.abspath(os.path.join(
     os.path.dirname(__file__), '..', 'db_init.sql'))
 commas = ', '.join
 
+dsn = os.environ.get('DATABASE_URL', "dbname=musashi-dev user=tester")
 
 def int_seq(start=0):
     n = start
@@ -91,7 +92,7 @@ def add_move_target(move_target, cur):
 
 
 def store_data(data_file=seeds):
-    conn = psycopg2.connect("dbname=musashi-dev user=tester")
+    conn = psycopg2.connect(dsn)
     cur = conn.cursor()
     try:
         print "Loading seeds file %s" % (data_file, )
@@ -116,7 +117,7 @@ def store_data(data_file=seeds):
 
 
 def init_tables():
-    conn = psycopg2.connect("dbname=musashi-dev user=tester")
+    conn = psycopg2.connect(dsn)
     cur = conn.cursor()
     try:
         cur.execute("DROP TABLE IF EXISTS {0};".format(
