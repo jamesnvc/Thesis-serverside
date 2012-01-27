@@ -55,6 +55,7 @@ class static(object):
         return open(to_serve).read()
 
 app = web.application(urls, globals())
+run = app.wsgifunc()
 
 if __name__ == '__main__':
     app.run()

@@ -1,4 +1,4 @@
+gunicorn==0.13.4
 psycopg2==2.4.4
-readline==6.2.1
 web.py==0.36
 wsgiref==0.1.2
