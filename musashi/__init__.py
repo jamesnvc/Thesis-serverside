@@ -12,7 +12,7 @@ render = web.template.render(
 
 db = None
 if 'HEROKU_SHARED_POSTGRESQL_AQUA_URL' in os.environ:
-    db_url = urlparse.urlparse('HEROKU_SHARED_POSTGRESQL_AQUA_URL')
+    db_url = urlparse.urlparse(os.environ['HEROKU_SHARED_POSTGRESQL_AQUA_URL'])
     db_params = {
                 'dbn': db_url.scheme,
                 'db': db_url.path[1:],
