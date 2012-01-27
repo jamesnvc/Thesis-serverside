@@ -1,6 +1,7 @@
 #!/usr/bin/env python2.7
 import os
 import json
+import urlparse
 import psycopg2
 
 seeds = os.path.abspath(os.path.join(
@@ -9,7 +10,15 @@ init = os.path.abspath(os.path.join(
     os.path.dirname(__file__), '..', 'db_init.sql'))
 commas = ', '.join
 
-dsn = os.environ.get('DATABASE_URL', "dbname=musashi-dev user=tester")
+dsn = "dbname=musashi-dev user=tester"
+if 'DATABASE_URL' in os.environ:
+    db_url = urlparse.urlparse('DATABASE_URL')
+    params = {'dbname': db_url.path[1:],
+            'user': db_url.username,
+            'password': db_url.password,
+            'host': db_url.hostname,
+            'port': db_url.port}
+    dsn = " ".join("{0}={1}".format(k, v) for k, v in params.items())
 
 def int_seq(start=0):
     n = start

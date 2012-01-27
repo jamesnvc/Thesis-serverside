@@ -11,7 +11,7 @@ render = web.template.render(
 
 db = None
 if 'DATABASE_URL' in os.environ:
-    db_url = web.database(os.environ['DATABASE_URL'])
+    db = web.database(os.environ['DATABASE_URL'])
 else:
     db = web.database(dbn='postgres', user='tester',
             pw='testing', db='musashi-dev')
