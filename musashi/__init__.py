@@ -1,5 +1,6 @@
 import collections
 import os
+import urlparse
 import web
 from musashi import analytics
 from musashi import api_handler
@@ -11,7 +12,16 @@ render = web.template.render(
 
 db = None
 if 'HEROKU_SHARED_POSTGRESQL_AQUA_URL' in os.environ:
-    db = web.database(os.environ['HEROKU_SHARED_POSTGRESQL_AQUA_URL'])
+    db_url = urlparse.urlparse('SHARED_DATABASE_URL')
+    db_params = {
+                'dbn': db_url.scheme,
+                'db': db_url.path[1:],
+                'user': db_url.username,
+                'pw': db_url.password,
+                'host': db_url.hostname,
+                'port': db_url.port
+            }
+    db = web.database(**db_params)
 else:
     db = web.database(dbn='postgres', user='tester',
             pw='testing', db='musashi-dev')
