@@ -12,7 +12,7 @@ commas = ', '.join
 
 db_params = {'database': 'musashi-dev', 'user': 'tester'}
 if 'HEROKU_SHARED_POSTGRESQL_AQUA_URL' in os.environ:
-    db_url = urlparse.urlparse('HEROKU_SHARED_POSTGRESQL_AQUA_URL')
+    db_url = urlparse.urlparse(os.environ['HEROKU_SHARED_POSTGRESQL_AQUA_URL'])
     db_params = {
                 'database': db_url.path[1:],
                 'user': db_url.username,
