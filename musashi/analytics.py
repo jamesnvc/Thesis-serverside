@@ -31,7 +31,7 @@ class Analyzer(object):
                 for target, gear in exercise:
                     health[target] -= gear
                 health_seq.append(health.copy())
-        return reversed(health_seq)
+        return iter(health_seq)
 
 
     def analyze(self, tracks):
