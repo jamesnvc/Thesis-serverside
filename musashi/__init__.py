@@ -21,7 +21,6 @@ if 'HEROKU_SHARED_POSTGRESQL_AQUA_URL' in os.environ:
                 'host': db_url.hostname,
                 'port': db_url.port
             }
-    print "Connecting to db with config {0}".format(db_params)
     db = web.database(**db_params)
 else:
     db = web.database(dbn='postgres', user='tester',

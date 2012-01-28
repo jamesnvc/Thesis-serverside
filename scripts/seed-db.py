@@ -20,7 +20,6 @@ if 'HEROKU_SHARED_POSTGRESQL_AQUA_URL' in os.environ:
                 'host': db_url.hostname,
                 'port': db_url.port
             }
-print "Seeding db with config {0}".format(db_params)
 
 def int_seq(start=0):
     n = start
