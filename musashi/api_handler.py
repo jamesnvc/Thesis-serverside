@@ -70,7 +70,8 @@ class Api(object):
         """Request that the workout be exported into a pdf and movie.
 
         Arguments:
-            - args: web input with a `tracks` field which is a JSON list of track ids.
+            - args: web input with a `tracks` field which is a JSON list of
+              track ids.
 
         Returns:
             A URL where a zip file of the exported workout can be downloaded.
