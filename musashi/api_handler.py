@@ -83,8 +83,6 @@ class Api(object):
         Arguments:
             - args: web input with a `track_ratings` field which is a JSON list
               of [track id, rating] pairs.
-
-        Returns:
         """
         pass
 
@@ -94,8 +92,6 @@ class Api(object):
         Arguments:
             - args: web input with a `tracks` field which is a JSON list of
               track ids.
-
-        Returns:
         """
         pass
 
