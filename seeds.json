@@ -95,6 +95,14 @@
       "kind": "Cooldown",
       "length_minutes": 4,
       "length_seconds": 17
+    },
+    {
+      "sequence": 1,
+      "release": 75,
+      "song": "",
+      "kind": "Warmup",
+      "length_minutes": 0,
+      "length_seconds": 0
     }
   ],
   "blocks": [
