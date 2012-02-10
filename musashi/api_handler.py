@@ -41,7 +41,25 @@ class Api(object):
         Returns:
             A json list of full track data.
         """
-        pass
+        track_ids = json.loads(args.tracks)
+        # TODO: Clean this up; either add a method or use a join
+        tracks = list(self.db.select('tracks',
+                where='id in $ids', vars=dict(ids=track_ids)))
+        for track in tracks:
+            track.blocks = list(self.db.select('blocks',
+                where='track_id = $track_id',
+                order='sequence',
+                vars=dict(track_id=track.id)))
+            for block in track.blocks:
+                block.exercises = list(self.db.select(
+                    'exercises', where="block_id = $block_id",
+                    order='start_time',
+                    vars=dict(block_id=block.id)))
+                for exercise in block.exercises:
+                    exercise.moves = list(self.db.select(
+                        'moves', where="exercise_id = $exercise_id",
+                        order='sequence', vars=dict(exercise_id=exercise.id)))
+        return self.to_json(tracks)
 
     def analyze_workout(self, args):
         """Analyze a given workout.
