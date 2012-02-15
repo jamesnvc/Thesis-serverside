@@ -16,8 +16,7 @@ class Api(object):
             A JSON list of tracks available.
         """
         # TODO: Filter which the requester can see?
-        tracks = self.db.select('tracks')
-        return self.to_json(tracks)
+        return self.to_json(self.db.select('tracks'))
 
     def get_preview(self, args):
         """Handle a request to get previews of a given track or tracks.
@@ -29,7 +28,9 @@ class Api(object):
         Returns:
             A json list of track preview data.
         """
-        pass
+        return self.to_json(self.db.select(
+            'tracks', where='id in $ids',
+            vars={'ids': json.loads(args.tracks)}))
 
     def get_full(self, args):
         """Handle a request to get full versions of a given track or tracks.
