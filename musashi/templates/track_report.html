@@ -21,7 +21,7 @@ $def with (blocks, analysis, fatigue)
           <tbody>
             $for exercise in block.exercises:
               <tr class="$loop.parity">
-                <td>$exercise.start_time</td>
+                <td>$exercise.start_time ($exercise.length seconds)</td>
                 <td class="description">
                   $exercise.description
                   <ul class="movelist">

@@ -25,7 +25,8 @@ CREATE TABLE exercises (
   description TEXT,
   reps INT,
   gear INT,
-  start_time INT
+  start_time INT,
+  length INT
 );
 
 CREATE TABLE moves (

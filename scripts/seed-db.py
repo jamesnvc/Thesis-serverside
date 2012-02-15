@@ -51,6 +51,7 @@ def add_block(block, cur):
     cur.execute(insert_into('blocks', fields),
             [block[field] for field in fields])
 
+previous_start_time = 0
 
 def add_exercise(exercise, cur):
     cur.execute(
@@ -67,8 +68,14 @@ def add_exercise(exercise, cur):
         moves = [{'description': exercise['description'],
                   'count': exercise['count']}]
         exercise['description'] = ""
-    fields = ['block_id', 'description', 'reps', 'gear', 'start_time']
+    fields = ['block_id', 'description', 'reps', 'gear', 'start_time',
+            'length']
     exercise['block_id'] = block_id
+    global previous_start_time
+    start_time = exercise['start_time']
+    start_time_seconds = (start_time % 100) + (start_time / 100) * 60
+    exercise['length'] = start_time_seconds - previous_start_time
+    previous_start_time = start_time_seconds
     cur.execute(
             insert_into('exercises', fields)[:-1] + " RETURNING id;",
             [exercise[field] for field in fields])
@@ -92,6 +99,7 @@ def add_move_target(move_target, cur):
     cur.execute("SELECT id FROM targets WHERE name = %s;",
             (move_target['target'],))
     target_id = cur.fetchone()[0]
+    # TODO: Need to avoid adding the same exercise multiple times
     cur.execute("SELECT id FROM moves WHERE description LIKE %s;",
             ('%' + move_target['move'] + '%',))
     id_pairs = [(target_id, move[0]) for move in cur]
