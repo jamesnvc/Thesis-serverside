@@ -73,6 +73,8 @@ def add_exercise(exercise, cur):
     exercise['block_id'] = block_id
     global previous_start_time
     start_time = exercise['start_time']
+    if start_time == 0:
+        previous_start_time = 0
     start_time_seconds = (start_time % 100) + (start_time / 100) * 60
     exercise['length'] = start_time_seconds - previous_start_time
     previous_start_time = start_time_seconds
