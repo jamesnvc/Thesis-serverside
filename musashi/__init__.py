@@ -1,3 +1,5 @@
+import base64
+import bcrypt
 import collections
 import os
 import urlparse
@@ -31,8 +33,14 @@ urls = (
     '/analyze', 'analyze',
     '/api/(.*)', 'api',
     '/(favicon.ico)', 'static',
-    '/s/(.*)', 'static'
+    '/s/(.*)', 'static',
+    '/authorize', 'auth'
 )
+
+# Basic, hacky auth
+allowed = {
+    'jamesnvc': '$2a$12$4covPIojRTqETBS/8QbORuRHAHuYDi/xHv/8QvZTgfFuE08K2cO8a'
+}
 
 
 class index(object):
@@ -55,6 +63,7 @@ class static(object):
     content_types = {
         '.js': 'text/javascript',
         '.css': 'text/css',
+        '.pdf': 'application/pdf',
         '.ico': 'image/x-icon'
     }
 
@@ -62,11 +71,40 @@ class static(object):
         to_serve = os.path.join(APP_ROOT, 'static',
             os.path.normpath(path))
         _, ext = os.path.splitext(to_serve)
+        # Need to be logged in to get the pdfs
+        print "Fetching {0}, extension {1}".format(to_serve, ext)
+        print "Context env = {0}".format(web.ctx.env)
+        if ext == '.pdf' and web.ctx.env.get('HTTP_AUTHORIZATION') is None:
+                raise web.seeother(
+                    '/authorize?redirect_to={0}'.format('/s/{0}'.format(path)))
         try:
             web.header('Content-type', self.content_types[ext])
         except KeyError:
             web.header('Content-type', 'text/plain')
         return open(to_serve).read()
+
+class auth(object):
+
+    def GET(self):
+        print "Authorizing from {0}".format(web.ctx.env.get('HTTP_REFERRER'))
+        auth = web.ctx.env.get('HTTP_AUTHORIZATION')
+        authreq = False
+        if auth is None:
+            authreq = True
+        else:
+            auth = auth[6:]
+            username, password = base64.decodestring(auth).split(':')
+            if username in allowed:
+                hashed_pw = allowed[username]
+                if bcrypt.hashpw(password, hashed_pw) == hashed_pw:
+                    path = web.input().redirect_to or '/'
+                    raise web.seeother(path)
+            else:
+                authreq = True
+        if authreq:
+            web.header('WWW-Authenticate','Basic realm="Musashi"')
+            web.ctx.status = '401 Unauthorized'
+            return
 
 app = web.application(urls, globals())
 run = app.wsgifunc()

@@ -2,3 +2,4 @@ gunicorn==0.13.4
 psycopg2==2.4.4
 web.py==0.36
 wsgiref==0.1.2
+py-bcrypt==0.2
