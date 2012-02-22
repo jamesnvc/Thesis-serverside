@@ -59,6 +59,19 @@ analyze.render = render
 api = api_handler.Api
 api.db = db
 
+
+def check_auth():
+    auth = web.ctx.env.get('HTTP_AUTHORIZATION')
+    if auth is None:
+        return False
+    auth = auth[6:]
+    username, password = base64.decodestring(auth).split(':')
+    if username in allowed:
+        hashed_pw = allowed[username]
+        return bcrypt.hashpw(password, hashed_pw) == hashed_pw
+    return False
+
+
 class static(object):
     content_types = {
         '.js': 'text/javascript',
@@ -72,9 +85,7 @@ class static(object):
             os.path.normpath(path))
         _, ext = os.path.splitext(to_serve)
         # Need to be logged in to get the pdfs
-        print "Fetching {0}, extension {1}".format(to_serve, ext)
-        print "Context env = {0}".format(web.ctx.env)
-        if ext == '.pdf' and web.ctx.env.get('HTTP_AUTHORIZATION') is None:
+        if ext == '.pdf' and not check_auth():
                 raise web.seeother(
                     '/authorize?redirect_to={0}'.format('/s/{0}'.format(path)))
         try:
@@ -83,22 +94,17 @@ class static(object):
             web.header('Content-type', 'text/plain')
         return open(to_serve).read()
 
+
 class auth(object):
 
     def GET(self):
-        print "Authorizing from {0}".format(web.ctx.env.get('HTTP_REFERRER'))
-        auth = web.ctx.env.get('HTTP_AUTHORIZATION')
         authreq = False
         if auth is None:
             authreq = True
         else:
-            auth = auth[6:]
-            username, password = base64.decodestring(auth).split(':')
-            if username in allowed:
-                hashed_pw = allowed[username]
-                if bcrypt.hashpw(password, hashed_pw) == hashed_pw:
-                    path = web.input().redirect_to or '/'
-                    raise web.seeother(path)
+            if check_auth():
+                path = web.input().redirect_to or '/'
+                raise web.seeother(path)
             else:
                 authreq = True
         if authreq:
