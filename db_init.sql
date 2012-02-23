@@ -1,6 +1,7 @@
 -- Track has many blocks
 CREATE TABLE tracks (
   id SERIAL PRIMARY KEY,
+  has_pdf BOOLEAN,
   sequence INT,
   release INT,
   song TEXT,

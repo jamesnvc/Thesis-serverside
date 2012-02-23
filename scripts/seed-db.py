@@ -35,7 +35,7 @@ def insert_into(table, fields):
 
 def add_track(track, cur):
     fields = ["sequence", "release", "song", "kind", "length_minutes",
-              "length_seconds"]
+              "length_seconds", "has_pdf"]
     cur.execute(
             insert_into('tracks', fields),
             [track[field] for field in fields])
@@ -71,6 +71,8 @@ def add_exercise(exercise, cur):
     fields = ['block_id', 'description', 'reps', 'gear', 'start_time',
             'length']
     exercise['block_id'] = block_id
+
+    # TODO: Fix the calculation of exercise length
     global previous_start_time
     start_time = exercise['start_time']
     if start_time == 0:
@@ -78,6 +80,7 @@ def add_exercise(exercise, cur):
     start_time_seconds = (start_time % 100) + (start_time / 100) * 60
     exercise['length'] = start_time_seconds - previous_start_time
     previous_start_time = start_time_seconds
+
     cur.execute(
             insert_into('exercises', fields)[:-1] + " RETURNING id;",
             [exercise[field] for field in fields])

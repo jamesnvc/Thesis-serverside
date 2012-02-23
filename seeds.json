@@ -3,6 +3,7 @@
     {
       "sequence": 1,
       "release": 72,
+      "has_pdf": true,
       "song" :"Seek Bromance",
       "kind": "Warmup",
       "length_minutes": 5,
@@ -11,6 +12,7 @@
     {
       "sequence": 2,
       "release": 72,
+      "has_pdf": true,
       "song" :"Life Of A Superstar",
       "kind": "Mixed Impact",
       "length_minutes": 4,
@@ -19,6 +21,7 @@
     {
       "sequence": 3,
       "release": 72,
+      "has_pdf": true,
       "song" :"Whip My Hair",
       "kind": "Aerobic",
       "length_minutes": 5,
@@ -27,6 +30,7 @@
     {
       "sequence": 4,
       "release": 72,
+      "has_pdf": true,
       "song" :"Fight For Your Right",
       "kind": "Pylometric",
       "length_minutes": 4,
@@ -35,6 +39,7 @@
     {
       "sequence": 5,
       "release": 72,
+      "has_pdf": true,
       "song" :"Born This Way",
       "kind": "Upper Body Conditioning",
       "length_minutes": 4,
@@ -43,6 +48,7 @@
     {
       "sequence": 6,
       "release": 72,
+      "has_pdf": true,
       "song" :"Never Leave You",
       "kind": "Running",
       "length_minutes": 4,
@@ -51,6 +57,7 @@
     {
       "sequence": 7,
       "release": 72,
+      "has_pdf": true,
       "song" :"Bbbbbbounce",
       "kind": "Agility",
       "length_minutes": 4,
@@ -59,6 +66,7 @@
     {
       "sequence": 8,
       "release": 72,
+      "has_pdf": true,
       "song" :"Heaven Is A Place On Earth",
       "kind": "Interval",
       "length_minutes": 5,
@@ -67,6 +75,7 @@
     {
       "sequence": 9,
       "release": 72,
+      "has_pdf": true,
       "song" :"Grenade",
       "kind": "Power",
       "length_minutes": 5,
@@ -75,6 +84,7 @@
     {
       "sequence": 10,
       "release": 72,
+      "has_pdf": true,
       "song" :"Higher",
       "kind": "Lower Body Conditioning",
       "length_minutes": 3,
@@ -83,6 +93,7 @@
     {
       "sequence": 11,
       "release": 72,
+      "has_pdf": true,
       "song" :"On The Floor",
       "kind": "Core Conditioning",
       "length_minutes": 4,
@@ -91,6 +102,7 @@
     {
       "sequence": 12,
       "release": 72,
+      "has_pdf": true,
       "song" :"Let's Go",
       "kind": "Cooldown",
       "length_minutes": 4,
@@ -99,6 +111,7 @@
     {
       "sequence": 1,
       "release": 75,
+      "has_pdf": true,
       "song": "",
       "kind": "Warmup",
       "length_minutes": 0,
