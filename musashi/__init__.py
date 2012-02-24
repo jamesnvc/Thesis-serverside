@@ -85,9 +85,9 @@ class static(object):
             os.path.normpath(path))
         _, ext = os.path.splitext(to_serve)
         # Need to be logged in to get the pdfs
-        if ext == '.pdf' and not check_auth():
-                raise web.seeother(
-                    '/authorize?redirect_to={0}'.format('/s/{0}'.format(path)))
+        #if ext == '.pdf' and not check_auth():
+                #raise web.seeother(
+                    #'/authorize?redirect_to={0}'.format('/s/{0}'.format(path)))
         try:
             web.header('Content-type', self.content_types[ext])
         except KeyError:
